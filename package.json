@@ -29,6 +29,8 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.3.16",
     "node-sass": "^4.11.0",
+    "okta": "^1.0.0",
+    "paypal-rest-sdk": "^1.8.1",
     "react": "^16.8.4",
     "react-router-dom": "^4.3.1"
   },
