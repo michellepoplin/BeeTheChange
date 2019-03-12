@@ -1,14 +1,11 @@
-import React from "react";
-import "./Nav.scss";
+// import React from "react";
+// import "./Nav.scss";
+// import Navbar from 'react-bootstrap/Navbar';
 
-function Nav(props) {
-    return (
-        <div className="nav">
-       
-   {props.children}
-      </div>
-      
-    );
-}
+// function Nav(props) {
+//     return (
+ 
+//     );
+// }
 
-export default Nav;
+// export default Nav;
