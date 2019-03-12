@@ -7,17 +7,17 @@ import Footer from "../components/Footer";
 import Wrapper from "../components/Wrapper";
 
 
-class User extends Component {
+class Home extends Component {
     render() {
         return (
             <Wrapper>
                 <FrontNav />
-                <CoverPic />
-                <SectionA className="sectionA" />
-                <Footer /> 
+                {/* <CoverPic /> */}
+                {/* <SectionA  /> */}
+                {/* <Footer />  */}
             </Wrapper>
         )
     };
     };
-    export default User;
+    export default Home;
     
