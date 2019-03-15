@@ -13,6 +13,7 @@ class User extends Component {
 render() {
     return (
         <Wrapper>
+            <Nav />
             <Container>This is Text</Container>
             <Footer>This is more text</Footer>
         </Wrapper>
