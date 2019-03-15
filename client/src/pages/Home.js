@@ -1,7 +1,7 @@
 
 import React, { Component } from "react";
 import FrontNav from "../components/FrontNav";
-import ControlledCarousel from "../components/ControlledCarousel/ControlledCarousel";
+import Slider from "../components/Slider/Slider";
 import SectionA from "../components/SectionA";
 import Footer from "../components/Footer";
 import Wrapper from "../components/Wrapper";
@@ -12,7 +12,7 @@ class Home extends Component {
         return (
             <Wrapper>
                 <FrontNav />
-                <ControlledCarousel />
+                <Slider />
                 {/* <SectionA  /> */}
                 {/* <Footer />  */}
             </Wrapper>
