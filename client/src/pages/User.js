@@ -16,6 +16,7 @@ class User extends Component {
 
     //   };
 
+
     render() {
         return (
             <Wrapper>
@@ -54,6 +55,7 @@ class User extends Component {
             </Wrapper>
         )
     }
+
 
 }
 
