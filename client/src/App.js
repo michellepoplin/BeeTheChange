@@ -12,12 +12,18 @@ const config = {
 }
 
 
+
+import Home from "./pages/Home";
+// import ControlledCarousel from "./component/ControlledCarousel";
+
 function App() {
   return (
     <Router>
       <div>
+      {/* <ControlledCarousel />  */}
         <Switch>
-          <Route exact path="/" component={User} />
+
+          <Route exact path="/user" component={User} />
           <Security issuer={config.issuer} client_id={config.client_id} redirect_uri={config.redirect_uri}>
           <Route path='/' exact={true} component={Home}/>
           <Route path='/implicit/callback' component={ImplicitCallback}/>
@@ -25,6 +31,8 @@ function App() {
         </Switch>
         <Switch>
           <Route exact path="/developers" component={Devpage} />
+          <Route exact path="/" component={Home} />
+
         </Switch>
       </div>
     </Router>
