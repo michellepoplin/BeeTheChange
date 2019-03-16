@@ -13,7 +13,7 @@ class Home extends Component {
             <Wrapper>
                 <FrontNav />
                 <Slider />
-                {/* <SectionA  /> */}
+                <SectionA  />
                 {/* <Footer />  */}
             </Wrapper>
         )
