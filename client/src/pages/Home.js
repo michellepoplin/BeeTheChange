@@ -1,7 +1,7 @@
-
 // import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import { withAuth } from '@okta/okta-react';
+
 
 // withAuth(class Home extends Component {
 //     state = { authenticated: null };
@@ -45,7 +45,6 @@
 // });
 
 // export default withAuth;
-
 
 import React, { Component } from "react";
 import FrontNav from "../components/FrontNav";
