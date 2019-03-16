@@ -54,7 +54,8 @@ import Slider from "../components/Slider/Slider";
 // import SectionA from "../components/SectionA";
 // import Footer from "../components/Footer";
 import Wrapper from "../components/Wrapper";
-import Container from "react-bootstrap/Container";
+// import Container from "react-bootstrap/Container";
+import Section from "react-bootstrap/Section";
 
 
 class Home extends Component {
@@ -63,15 +64,15 @@ class Home extends Component {
             <Wrapper>
               <FrontNav />
                 <Grid fluid>
-                  <Container>
+                  <Section>
                     <Row>
                       <Col xs={12}>
-                         <Container>
+                         {/* <Container> */}
                              <Slider />
-                         </Container>
+                         {/* </Container> */}
                        </Col>
                     </Row>
-                    </Container>
+                    </Section>
                 </Grid>
             </Wrapper>
         )

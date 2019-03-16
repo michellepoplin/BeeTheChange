@@ -40,7 +40,7 @@ class Slider extends React.Component {
         >
           <Carousel.Item>
             <img
-              className="d-block w-50"
+              className="d-block w-100"
               src="https://images.unsplash.com/photo-1501261942928-5f1a1aec5fda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
               alt="First slide"
             />
@@ -51,7 +51,7 @@ class Slider extends React.Component {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-50"
+              className="d-block w-100"
               src="https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
               alt="second slide"
             />
@@ -63,7 +63,7 @@ class Slider extends React.Component {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="d-block w-50"
+              className="d-block w-100"
               src="https://images.unsplash.com/photo-1548365329-c628c7005461?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
               alt="Third slide"
             />
