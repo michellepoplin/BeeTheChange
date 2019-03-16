@@ -44,3 +44,4 @@ withAuth(class Home extends Component {
 });
 
 export default withAuth;
+

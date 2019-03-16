@@ -1,17 +1,18 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 
 
 function Usercard(props) {
     return (
 <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="https://via.placeholder.com/100" />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
+<Card.Body>
+  <Image src="https://via.placeholder.com/250" roundedCircle />
+
+    <Card.Title>Bob Farmer</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      I'm a Farmer, I like Bee's you should like my Bee's too. Honey is great, Vegans that think Honey is not great are lame.
     </Card.Text>
     <Button variant="primary">Go somewhere</Button>
   </Card.Body>
