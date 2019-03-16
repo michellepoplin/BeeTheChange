@@ -55,7 +55,7 @@ import Slider from "../components/Slider/Slider";
 // import Footer from "../components/Footer";
 import Wrapper from "../components/Wrapper";
 // import Container from "react-bootstrap/Container";
-import Section from "react-bootstrap/Section";
+import Section from '../components/Section';
 
 
 class Home extends Component {
