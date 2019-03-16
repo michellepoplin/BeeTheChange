@@ -1,26 +1,15 @@
 import React from "react";
 import "./Nav.scss";
-import
+import Navbar from 'react-bootstrap/Navbar';
 
   function Nav(props) {
     return (
-      <div className="nav">
-        <div className="nav-header">
-          <div className="nav-title">
-            BeeTheChange
-        </div>
-          <Nav.Item>
-            <Nav.Link href="./auth/Login">Login/Sign-Up</Nav.Link>
-          </Nav.Item>
 
+      <Navbar bg="light">
+      <Navbar.Brand href="#home">Brand link</Navbar.Brand>
+  </Navbar>
+    );
+}
 
-
-
-          {props.children}
-        </div>
-
-        );
-      }
-
-      export default Nav;
+export default Nav;
 
