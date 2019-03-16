@@ -2,8 +2,9 @@ import React from "react";
 import "./Nav.scss";
 import Navbar from 'react-bootstrap/Navbar';
 
-function Nav(props) {
+  function Nav(props) {
     return (
+
       <Navbar bg="light">
       <Navbar.Brand href="#home">Brand link</Navbar.Brand>
   </Navbar>
@@ -11,3 +12,4 @@ function Nav(props) {
 }
 
 export default Nav;
+

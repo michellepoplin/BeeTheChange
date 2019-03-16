@@ -1,14 +1,10 @@
 import React from "react";
-import Card from 'react-bootstrap/Card';
+import Image from 'react-bootstrap/Image';
 import './Usercover.scss'
 
 function Usercover(props) {
     return (
-<Card>
-    <Card.Body>
-</Card.Body>
-<Card.Img variant="bottom" src="holder.js/200px200" />
-</Card>
+<Image src="https://via.placeholder.com/800x400" fluid />
 
 );
 }
