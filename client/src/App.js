@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import User from "./pages/User";
-// import Devpage from './pages/Devpage';
-// import Nav from "./components/Nav";
-// import Home from "./pages/Home";
-// import { Security, ImplicitCallback } from '@okta/okta-react';
-// const config = {
-//   issuer: 'https://dev-378075.okta.com/oauth2/default',
-//   redirect_uri: window.location.origin + '/implicit/callback',
-//   client_id: '{clientId}'
-// }
+import Devpage from './pages/Devpage';
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import { Security, ImplicitCallback } from '@okta/okta-react';
+const config = {
+  issuer: 'https://dev-378075.okta.com/oauth2/default',
+  redirect_uri: window.location.origin + '/implicit/callback',
+  client_id: '{ 0oabhpsmmfYQT5smT356}'
+}
 
 
 
@@ -21,6 +21,7 @@ function App() {
     <Router>
       <div>
       {/* <ControlledCarousel />  */}
+
         <Switch>
 
           <Route exact path="/user" component={User} />

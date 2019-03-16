@@ -21,3 +21,5 @@ function Devcard(props) {
 }
 
 export default Devcard;
+
+//about developer page
