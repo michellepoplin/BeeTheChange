@@ -8,7 +8,7 @@ import { Security, ImplicitCallback } from '@okta/okta-react';
 const config = {
   issuer: 'https://dev-378075.okta.com/oauth2/default',
   redirect_uri: window.location.origin + '/implicit/callback',
-  client_id: '{clientId}'
+  client_id: '{ 0oabhpsmmfYQT5smT356}'
 }
 
 
@@ -16,6 +16,7 @@ function App() {
   return (
     <Router>
       <div>
+        <Nav/>
         <Switch>
           <Route exact path="/" component={User} />
           <Security issuer={config.issuer} client_id={config.client_id} redirect_uri={config.redirect_uri}>
