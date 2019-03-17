@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// import User from "./pages/User";
+import User from "./pages/User";
 // import Devpage from './pages/Devpage';
 // import Nav from "./components/Nav";
 import Home from "./pages/Home";
@@ -28,7 +28,7 @@ function App() {
           <Route path='/implicit/callback' component={ImplicitCallback}/>
 
         </Security> */}
-        </Switch>
+        {/* </Switch> */}
         {/* <Switch>
           <Route exact path="/developers" component={Devpage} />
         </Security>
@@ -37,8 +37,9 @@ function App() {
           {/* <Route exact path="/developers" component={Devpage} /> */}
 
           <Route exact path="/" component={Home} />
+          <Route exact path="/user" component={User} />
 
-        </Switch> */}
+        </Switch> 
       </div>
     </Router>
   );

@@ -1,24 +1,29 @@
 import React from "react";
 import "./frontNav.scss";
 
-function FrontNav(props) {
-    return (
-        <div className="nav">
-        <div className="nav-header">
-    <div className="nav-title">
-      BeeTheChange
-    </div>
-  </div>
-  <span></span>
-  <span></span>
-  <span></span>
+import Navbar from 'react-bootstrap/Navbar';
+import Logo from '../../../src/logo.svg';
 
+  function FrontNav(props) {
+    return (
+
+      <Navbar className="navbarStyle">
+      <Navbar.Brand className="navheader" href="#home">     
+      <img
+        src={Logo}
+        width="55"
+        height="55"
+        className="d-inline-block align-top"
+        alt="Bee The Change Logo"
+      />
+      <span className='textheader'>
+      {' Bee The Change '}
+      </span>
+      </Navbar.Brand>
   
-  
-        {props.children}
-      </div>
-      
+  </Navbar>
     );
 }
 
 export default FrontNav;
+
