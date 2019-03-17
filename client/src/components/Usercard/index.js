@@ -11,10 +11,6 @@ function Usercard(props) {
   <Image src="https://via.placeholder.com/250" roundedCircle />
 
     <Card.Title>Bob Farmer</Card.Title>
-    <Card.Text>
-      I'm a Farmer, I like Bee's you should like my Bee's too. Honey is great, Vegans that think Honey is not great are lame.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
   </Card.Body>
 </Card>
 
