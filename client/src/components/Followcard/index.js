@@ -8,13 +8,13 @@ import "./Followcard.scss";
 
 function Followcard() {
     return (
-        <Card style={{ width: '18rem' }} className={"followCard"}>
+        <Card style={{ width: '18rem' }} className={"followCard cardContainer"}>
             <Card.Body>
                 <Row>
-                    <Button className={"beeButton followCardButt"}>Follow</Button>
+                    <Button className={"beeButton followCardButt1"}>Follow</Button>
                 </Row>
                 <Row>
-                    <Button className={"beeButton followCardButt"}>Message</Button>
+                    <Button className={"beeButton followCardButt2"}>Message</Button>
                 </Row>
             </Card.Body>
         </Card>
