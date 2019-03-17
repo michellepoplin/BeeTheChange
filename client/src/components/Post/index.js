@@ -1,13 +1,18 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
+import {Component} from "react";
 // import Button from 'react-bootstrap/Button';
 
 
-function Post(props) {
-    return (
-<Container>{props.children}</Container>
 
-    );
+class Post extends Component {
+    render() {
+        return (
+            <Container>
+                {this.props.user} {this.props.message}
+            </Container>
+        );
+    }
 }
 
 export default Post;
