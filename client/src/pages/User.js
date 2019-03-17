@@ -49,10 +49,8 @@ class User extends Component {
                             </Col>
                         </Row>
                     </Container>
-               
-                
-                <Footer />
                 </Grid>
+                <Footer />
             </Wrapper>
             
         )
