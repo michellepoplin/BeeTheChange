@@ -23,7 +23,7 @@ class User extends Component {
 
                 <Nav />
                 <Grid fluid>
-                    <Container>
+                    <Container divStyle={"margin-bottom: 50px;"}>
                         <Row>
                             <Col xs={3}>
                                 <Container>
@@ -49,10 +49,12 @@ class User extends Component {
                             </Col>
                         </Row>
                     </Container>
+               
+                
+                <Footer />
                 </Grid>
-                <Footer>This Will Be The Footer Routes</Footer>
-
             </Wrapper>
+            
         )
     }
 
