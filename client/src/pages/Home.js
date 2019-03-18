@@ -51,6 +51,7 @@ import FrontNav from "../components/FrontNav";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Slider from "../components/Slider/Slider";
 import SectionA from "../components/SectionA/SectionA";
+import SectionB from "../components/SectionB/SectionB";
 import Footer from "../components/Footer";
 import Wrapper from "../components/Wrapper";
 // import Container from "react-bootstrap/Container";
@@ -80,6 +81,13 @@ class Home extends Component {
                         </Col>
                      </Row>
                     </Container>
+                  </Section>
+                  <Section>
+                      <Row>
+                        <Col xs={12}>
+                             <SectionB />
+                        </Col>
+                     </Row>
                   </Section>
                 </Grid>
                 <Footer />
