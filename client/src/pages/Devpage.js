@@ -18,21 +18,21 @@ class Devpage extends Component {
                 <Nav />
                 <Grid fluid>
                     <Container>
-                     <Row>Developer</Row>
-                     <Row>
-                         <Col xs={3}>
-                         <Devcard>Allie</Devcard>
-                         </Col>
-                         <Col xs={3}>
-                         <Devcard>Kristen</Devcard>
-                         </Col>
-                         <Col xs={3}>
-                         <Devcard>Michelle</Devcard>
-                         </Col>
-                         <Col xs={3}>
-                         <Devcard>Krista</Devcard>
-                         </Col>
-                     </Row>
+                        <Row>Developer</Row>
+                        <Row>
+                            <Col xs={3}>
+                                <Devcard>Allie</Devcard>
+                            </Col>
+                            <Col xs={3}>
+                                <Devcard>Kristen</Devcard>
+                            </Col>
+                            <Col xs={3}>
+                                <Devcard>Michelle</Devcard>
+                            </Col>
+                            <Col xs={3}>
+                                <Devcard>Krista</Devcard>
+                            </Col>
+                        </Row>
                     </Container>
                 </Grid>
                 <Footer>This Will Be The Footer Routes</Footer>

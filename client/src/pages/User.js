@@ -54,7 +54,7 @@ class User extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        this.searchPuppies(this.state.search);
+        // this.searchPuppies(this.state.search);
     };
 
     render() {

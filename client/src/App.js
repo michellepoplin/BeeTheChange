@@ -15,13 +15,12 @@ function App() {
   return (
     <Router>
       <div>
-        <User/>
         <Switch>
           <Route exact path="/" component={User} />
           <Security issuer={config.issuer} client_id={config.client_id} redirect_uri={config.redirect_uri}>
-          <Route path='/' exact={true} component={Home}/>
-          <Route path='/implicit/callback' component={ImplicitCallback}/>
-        </Security>
+            <Route path='/' exact={true} component={Home}/>
+            <Route path='/implicit/callback' component={ImplicitCallback}/>
+          </Security>
         </Switch>
         <Switch>
           <Route exact path="/developers" component={Devpage} />
