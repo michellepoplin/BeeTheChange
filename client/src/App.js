@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import User from "./pages/User";
-import Devpage from './pages/Devpage';
+// import Devpage from './pages/Devpage';
 import Home from "./pages/Home";
 import { Security, ImplicitCallback } from '@okta/okta-react';
 const config = {
@@ -11,10 +11,16 @@ const config = {
 }
 
 
+
+// import Home from "./pages/Home";
+// import ControlledCarousel from "./component/ControlledCarousel";
+
 function App() {
   return (
     <Router>
       <div>
+      {/* <ControlledCarousel />  */}
+
         <Switch>
           <Route exact path="/" component={User} />
           <Security issuer={config.issuer} client_id={config.client_id} redirect_uri={config.redirect_uri}>
@@ -22,9 +28,11 @@ function App() {
             <Route path='/implicit/callback' component={ImplicitCallback}/>
           </Security>
         </Switch>
-        <Switch>
+        {/* <Switch>
           <Route exact path="/developers" component={Devpage} />
-        </Switch>
+          <Route exact path="/" component={Home} />
+
+        </Switch> */}
       </div>
     </Router>
   );
