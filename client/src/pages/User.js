@@ -22,7 +22,6 @@ class User extends Component {
             <Wrapper>
 
                 <Nav />
-                <Grid fluid>
                 <Usercover>
                     <Row>
                         <Col md={3}>
@@ -34,6 +33,7 @@ class User extends Component {
                             </Col>
                     </Row>
                 </Usercover>
+                <Grid fluid>
                     <Container divStyle={"margin-bottom: 50px;"}>
                     <Row>
                         <Col md={3}></Col>

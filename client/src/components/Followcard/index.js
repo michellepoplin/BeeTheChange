@@ -8,7 +8,7 @@ import "./Followcard.scss";
 
 function Followcard() {
     return (
-        <Card style={{ width: '18rem' }} className={"followCard cardContainer"}>
+        <Card className={"followCard cardContainer"}>
             <Card.Body>
                 <Row>
                     <Button className={"beeButton followCardButt1"}>Follow</Button>
