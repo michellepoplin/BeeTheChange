@@ -8,7 +8,7 @@ var ButtonStyle = {
 
 var modal = document.getElementById('UserCoverModal');
 
-window.onclick = function(event) {
+window.onClick = function(event) {
   if (event.target === modal) {
     modal.style.display = "none";
   }
@@ -25,7 +25,7 @@ function Usercard(props) {
           Some quick example text to build on the card title and make up the bulk of
           the card's content.
         </Card.Text>
-        <Button style={ButtonStyle} onclick="document.getElementById('ProfilePicModal').style.display='block'">Edit</Button>
+        <Button style={ButtonStyle} onClick={document.getElementById('ProfilePicModal')}>Edit</Button>
       </Card.Body>
     </Card>
 

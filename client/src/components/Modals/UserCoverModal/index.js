@@ -3,9 +3,9 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 
-const fileInput = document.getElementById('file-input');
+// const fileInput = document.getElementById('file-input');
 
-fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
+// fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
 
 class UserCoverModal extends React.Component {
     constructor(props, context) {
@@ -38,7 +38,7 @@ class UserCoverModal extends React.Component {
                 <Modal id="UserCoverModal" show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Add Your Profile Picture</Modal.Title>
-                        <span onclick="document.getElementById('UserCoverModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <span onClick={document.getElementById('UserCoverModal').style.display='none'}>&times;</span>
                     </Modal.Header>
                     <Modal.Body>
                         <input type="file" accept="image/*" id="file-input"></input>

@@ -38,7 +38,7 @@ class ProfilePicModal extends React.Component {
                 <Modal id="ProfilePicModal" show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Add Your Profile Picture</Modal.Title>
-                        <span onclick="document.getElementById('ProfilePicModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <span onClick="document.getElementById('ProfilePicModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
                     </Modal.Header>
                     <Modal.Body>
                         <input type="file" accept="image/*" id="file-input"></input>
