@@ -66,7 +66,7 @@ class Home extends Component {
         return (
             <Wrapper>
               <FrontNav />
-                <Grid fluid>
+                {/* <Grid fluid> */}
                   <Section>
                     <Row>
                       <Col xs={12}>
@@ -102,7 +102,7 @@ class Home extends Component {
                      </Row>
                     </Container>
                   </Section>
-                </Grid>
+                {/* </Grid> */}
                 <Footer />
             </Wrapper>
         )
