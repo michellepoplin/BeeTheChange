@@ -6,7 +6,11 @@ import './Post.scss'
 
 function Post(props) {
     return (
-<Container className="post">{props.children}</Container>
+        <Container className="post">
+            <p>
+                {props.children}
+            </p>
+        </Container>
 
     );
 }

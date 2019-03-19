@@ -9,21 +9,17 @@ const Footer = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="4">
-            <h5 className="title">Footer Content</h5>
-            <p>
-              Here you can use rows and columns here to organize your footer
-              content.
-            </p>
-          </MDBCol>
-          <MDBCol md="4">
-          <MDBRow>
-            <img
+          <img
               src={Logo}
               width="200"
               height="200"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top footerLogo"
               alt="Bee The Change Logo"
             />
+          </MDBCol>
+          <MDBCol md="4">
+          <MDBRow>
+          
             </MDBRow>
             <MDBRow>
                <div className="footer-copyright text-center py-3">
@@ -34,19 +30,18 @@ const Footer = () => {
       </MDBRow>
           </MDBCol>
           <MDBCol md="4">
-            <h5 className="title">Links</h5>
             <ul>
               <li className="list-unstyled">
-                <a href="#!">Link 1</a>
+                <a href="#!" className={"footerLink"}>||  Home Page ||</a>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 2</a>
+                <a href="#!" className={"footerLink"}>||  FAQ  ||</a>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 3</a>
+                <a href="#!" className={"footerLink"}>||  Contact Us ||</a>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 4</a>
+                <a href="#!" className={"footerLink"}>||  About The Team ||</a>
               </li>
             </ul>
           </MDBCol>
