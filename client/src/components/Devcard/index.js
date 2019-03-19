@@ -1,18 +1,22 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
-// import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 function Devcard(props) {
     return (
         <Container>
-<Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="https://via.placeholder.com/100" />
+<Card>
+  <Card.Img variant="top" src={props.picture} />
   <Card.Body>
-    <Card.Title>{props.children}</Card.Title>
+    <Card.Title>{props.title}</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+     {props.about}
+      <Row>
+      <a href={props.github}><i class="fab fa-github"></i></a>
+      
+      <a href={props.linkedin}><i class="fab fa-linkedin"></i></a>
+      </Row>
     </Card.Text>
   </Card.Body>
 </Card>

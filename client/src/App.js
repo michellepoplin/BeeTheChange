@@ -4,6 +4,7 @@ import User from "./pages/User";
 // import Devpage from './pages/Devpage';
 // import Nav from "./components/Nav";
 import Home from "./pages/Home";
+import Devpage from "./pages/Devpage";
 // import { Security, ImplicitCallback } from '@okta/okta-react';
 // const config = {
 //   issuer: 'https://dev-378075.okta.com/oauth2/default',
@@ -38,6 +39,7 @@ function App() {
 
           <Route exact path="/" component={Home} />
           <Route exact path="/user" component={User} />
+          <Route exact path="/developers" component={Devpage} />
         </Switch> 
       </div>
     </Router>
