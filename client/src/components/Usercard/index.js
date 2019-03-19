@@ -25,7 +25,9 @@ function Usercard(props) {
           Some quick example text to build on the card title and make up the bulk of
           the card's content.
         </Card.Text>
-        <Button style={ButtonStyle} onClick={document.getElementById('ProfilePicModal')}>Edit</Button>
+        <Button style={ButtonStyle} variant="primary" onClick={this.handleShow}>
+          Edit
+        </Button>
       </Card.Body>
     </Card>
 

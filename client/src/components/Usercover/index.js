@@ -20,7 +20,9 @@ function Usercover(props) {
     return (
         <div>
             <Image src="https://via.placeholder.com/800x400" fluid />
-            <Button style={ButtonStyle} onClick={document.getElementById('UserCoverPic')}>Edit</Button>
+            <Button style={ButtonStyle} variant="primary" onClick={this.handleShow}>
+                Edit
+            </Button>
         </div>
 
 
