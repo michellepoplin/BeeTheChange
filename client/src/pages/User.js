@@ -24,10 +24,10 @@ class User extends Component {
                 <Nav />
                 <Usercover>
                     <Row>
-                        <Col md={3}>
+                        <Col md={6}>
                         <Usercard />
                         </Col>
-                        <Col md={6}></Col>
+                        <Col md={3}></Col>
                         <Col md={3}>
                         <Followcard />
                             </Col>
