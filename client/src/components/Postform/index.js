@@ -2,11 +2,12 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import './Postform.scss'
 
 function Postform(props) {
     return (
 <Container>
-<Form>
+<Form className={'postForm'}>
 <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Label>Example textarea</Form.Label>
     <Form.Control as="textarea" rows="3" />
