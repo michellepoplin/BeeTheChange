@@ -1,0 +1,34 @@
+.followCardButt {
+    align-content: center;
+    width: 200px !important;
+    margin-top: 20px;
+    padding: 20px;
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #45384f;
+    border: none; 
+    box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);
+    text-align:center;
+    color: #EDEFFF;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.followCard {
+    height: 100%;
+}
+
+.topSpan {
+    height: 300px;
+}
+
+@media only screen and (max-width: 680px) {
+   .topSpan {
+       height: 50px;
+   }
+   .followCardButt {
+       width: 100px;
+       padding: 10px;
+   }
+  }

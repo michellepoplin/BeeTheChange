@@ -1,26 +1,28 @@
 import React from "react";
 import "./Nav.scss";
-import
+import Navbar from 'react-bootstrap/Navbar';
+import Logo from '../../../src/logo.svg';
 
   function Nav(props) {
     return (
-      <div className="nav">
-        <div className="nav-header">
-          <div className="nav-title">
-            BeeTheChange
-        </div>
-          <Nav.Item>
-            <Nav.Link href="./auth/Login">Login/Sign-Up</Nav.Link>
-          </Nav.Item>
 
+      <Navbar className="navbarStyle">
+      <Navbar.Brand className="navheader" href="#home">     
+      <img
+        src={Logo}
+        width="55"
+        height="55"
+        className="d-inline-block align-top"
+        alt="Bee The Change Logo"
+      />
+      <span className='textheader'>
+      {' Bee The Change '}
+      </span>
+      </Navbar.Brand>
+  
+  </Navbar>
+    );
+}
 
-
-
-          {props.children}
-        </div>
-
-        );
-      }
-
-      export default Nav;
+export default Nav;
 
