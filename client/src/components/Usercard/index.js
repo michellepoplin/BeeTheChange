@@ -1,22 +1,24 @@
 import React from "react";
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
+import './Usercard.scss';
+import {Row, Col} from 'react-bootstrap';
+
 
 
 function Usercard(props) {
     return (
-<Card style={{ width: '18rem' }}>
-<Card.Body>
-  <Image src="https://via.placeholder.com/250" roundedCircle />
 
-    <Card.Title>Bob Farmer</Card.Title>
-    <Card.Text>
-      I'm a Farmer, I like Bee's you should like my Bee's too. Honey is great, Vegans that think Honey is not great are lame.
-    </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
-</Card>
+<Container className={"profilePicture"}>
+<Col md={6}></Col>
+<Col md={6}>
+<Row>
+  <Image src="https://via.placeholder.com/250" roundedCircle />
+  </Row>
+  <Row><h3 className={"userHeader"}>Bob The Farmer</h3></Row>
+  </Col>
+</Container>
+
 
     );
 }

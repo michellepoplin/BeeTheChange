@@ -1,0 +1,27 @@
+.postButton {
+    align-content: center;
+    width: 100px !important;
+    margin-top: 20px;
+    padding: 10px;
+    display: block;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #45384f;
+    border: none; 
+    box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);
+    text-align:center;
+    color: #EDEFFF;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.formLabel {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 680px) {
+    .postForm {
+        margin-top: 50px;
+    }
+   }

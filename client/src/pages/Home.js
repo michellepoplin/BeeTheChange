@@ -52,6 +52,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import Slider from "../components/Slider/Slider";
 import SectionA from "../components/SectionA/SectionA";
 import SectionB from "../components/SectionB/SectionB";
+import SectionC from "../components/SectionC/SectionC";
 import Footer from "../components/Footer";
 import Wrapper from "../components/Wrapper";
 // import Container from "react-bootstrap/Container";
@@ -73,6 +74,7 @@ class Home extends Component {
                       </Col>
                     </Row>
                   </Section>
+                  <br />
                   <Section>
                     <Container>
                       <Row>
@@ -82,12 +84,23 @@ class Home extends Component {
                      </Row>
                     </Container>
                   </Section>
+                  <br />
                   <Section>
                       <Row>
                         <Col xs={12}>
                              <SectionB />
                         </Col>
                      </Row>
+                  </Section>
+                  <br />
+                  <Section>
+                    <Container>
+                      <Row>
+                        <Col xs={12}>
+                             <SectionC />
+                        </Col>
+                     </Row>
+                    </Container>
                   </Section>
                 </Grid>
                 <Footer />

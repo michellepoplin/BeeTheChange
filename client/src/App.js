@@ -38,7 +38,6 @@ function App() {
 
           <Route exact path="/" component={Home} />
           <Route exact path="/user" component={User} />
-
         </Switch> 
       </div>
     </Router>

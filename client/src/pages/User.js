@@ -9,7 +9,7 @@ import Tiers from '../components/Tiers';
 import Container from 'react-bootstrap/Container';
 import Post from '../components/Post';
 import Postform from "../components/Postform";
-import Button from 'react-bootstrap/Button';
+import Followcard from '../components/Followcard';
 
 class User extends Component {
     //   state = {
@@ -22,37 +22,39 @@ class User extends Component {
             <Wrapper>
 
                 <Nav />
+                <Usercover>
+                    <Row>
+                        <Col md={6}>
+                        <Usercard />
+                        </Col>
+                        <Col md={3}></Col>
+                        <Col md={3}>
+                        <Followcard />
+                            </Col>
+                    </Row>
+                </Usercover>
                 <Grid fluid>
-                    <Container>
-                        <Row>
-                            <Col xs={3}>
-                                <Container>
-                                    <Usercard />
-                                </Container>
-                            </Col>
-                            <Col xs={6}>
-                                <Container>
-                                    <Usercover />
-                                    <Container>
-                                        <Postform />
-                                    <Post>This is a Post</Post>
-                                    <Post>This is a Post</Post>  
-                                    <Post>This is a Post</Post>
-                                    </Container>
-                                </Container>
-                            </Col>
-                            <Col xs={3}>
-                                <Container>
-                                    <Button>Follow</Button>
-                                    <Tiers />
-                                </Container>
-                            </Col>
-                        </Row>
+                    <Container divStyle={"margin-bottom: 50px;"}>
+                    <Row>
+                        <Col md={3}></Col>
+                        <Col md={6}>
+                        <Postform />
+                        <Post>This is a Post</Post>
+                        <Post>This is a Post</Post>
+                        <Post>This is a Post</Post>
+                        </Col>
+                        <Col md={3}>
+                        <Tiers>This is a Tier</Tiers>
+                        <Tiers>This is a Tier</Tiers>
+                        <Tiers>This is a Tier</Tiers>
+                        <Tiers>This is a Tier</Tiers></Col>
+                    </Row>
+                    
                     </Container>
                 </Grid>
-                <Footer>This Will Be The Footer Routes</Footer>
-
+                <Footer />
             </Wrapper>
+            
         )
     }
 
