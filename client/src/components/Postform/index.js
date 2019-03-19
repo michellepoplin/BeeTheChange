@@ -9,10 +9,10 @@ function Postform(props) {
 <Container>
 <Form className={'postForm'}>
 <Form.Group controlId="exampleForm.ControlTextarea1">
-    <Form.Label>Example textarea</Form.Label>
+    <Form.Label className={"formLabel"}>Update your sponsors!</Form.Label>
     <Form.Control as="textarea" rows="3" />
   </Form.Group>
-  <Button variant="primary">Post</Button>
+  <button className={"postButton"}>Post</button>
   </Form>
   </Container>
 
