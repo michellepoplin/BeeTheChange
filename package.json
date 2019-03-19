@@ -1,7 +1,7 @@
 {
   "name": "beethechange",
   "version": "1.0.0",
-  "description": "A website for Farmers to fun bee harvesting and help the bee population.",
+  "description": "A website for Farmers to fund bee harvesting and help the bee population.",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
