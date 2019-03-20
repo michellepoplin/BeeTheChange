@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Nav from "../components/Nav";
+import Mainnav from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 import Footer from "../components/Footer";
 import Usercard from '../components/Usercard';
@@ -9,7 +9,8 @@ import Tiers from '../components/Tiers';
 import Container from 'react-bootstrap/Container';
 import PostsContainer from '../components/PostsContainer';
 import Postform from "../components/Postform";
-import Button from 'react-bootstrap/Button';
+import Followcard from '../components/Followcard';
+import Aboutuser from '../components/Aboutuser';
 
 const messages = [
     {
@@ -60,14 +61,24 @@ class User extends Component {
     render() {
         return (
             <Wrapper>
-                <Nav />
+
+                <Mainnav />
+                <Usercover>
+                    <Row>
+                        <Col md={6}>
+                            <Usercard />
+                        </Col>
+                        <Col md={3}></Col>
+                        <Col md={3}>
+                            <Followcard />
+                        </Col>
+                    </Row>
+                </Usercover>
                 <Grid fluid>
-                    <Container>
+                    <Container divStyle={"margin-bottom: 50px;"}>
                         <Row>
-                            <Col xs={3}>
-                                <Container>
-                                    <Usercard />
-                                </Container>
+                            <Col md={3}>
+                            <Aboutuser />
                             </Col>
                             <Col xs={6}>
                                 <Container>
@@ -84,11 +95,30 @@ class User extends Component {
                                     <Tiers />
                                 </Container>
                             </Col>
+                            <Col md={3}>
+                                <Tiers
+                                tierlevel="Getting Started"
+                                tierprice="5$"
+                                tierdescription="Help pay for the care of the Bee's and get updates"
+                                />
+                                <Tiers
+                                tierlevel="Help A Hive"
+                                tierprice="10$"
+                                tierdescription="Sponsor Bee care and get 1 bottle of honey"
+                                />
+                                <Tiers
+                                tierlevel="Start A Hive"
+                                tierprice="150$"
+                                tierdescription="Start a hive, get 10% of the honey output every season"
+                                />
+                                </Col>
                         </Row>
+
                     </Container>
                 </Grid>
-                <Footer>This Will Be The Footer Routes</Footer>
+                <Footer />
             </Wrapper>
+
         )
     }
 }

@@ -1,0 +1,33 @@
+// .sectionB {
+//     margin: 0%;
+//     width: 100%;
+//     background-image: url("../../assets/images/img1.jpg");
+//     background-repeat: no-repeat, repeat;
+//     background-size: 1100px;
+// }
+
+
+
+.SectionB {
+    margin: 0%;
+    width: 100%;
+    background-image: url("../../assets/images/img1.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    margin-bottom: 50px;
+    height: 500px;
+    
+};
+
+@media only screen and (max-width: 680px) {
+    .userCover {
+        margin-bottom: 50px;
+    }
+   };
+
+   #capB {
+       padding-top: 250px;
+       padding-left: 700px;
+       color: white;
+
+   };
