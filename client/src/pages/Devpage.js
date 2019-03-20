@@ -5,6 +5,10 @@ import Footer from "../components/Footer";
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Container from 'react-bootstrap/Container';
 import Devcard from '../components/Devcard';
+import Allie from '../assets/images/allie.jpg';
+import Kristen from '../assets/images/kristen.jpg';
+import Michelle from '../assets/images/michelle.png';
+import Krista from '../assets/images/krista.jpg';
 
 class Devpage extends Component {
     //   state = {
@@ -18,11 +22,11 @@ class Devpage extends Component {
                 <Nav />
                 <Grid fluid>
                     <Container>
-                     <Row>Developer</Row>
+                     <Row className={"devHeader"}>Developer</Row>
                      <Row>
                          <Col xs={3}>
                          <Devcard 
-                         picture="logo.svg" 
+                         picture= {Allie} 
                          title="Allie Valder"
                          about="Allie likes cats and coffee"
                          github="https://github.com/avalder01"
@@ -31,7 +35,7 @@ class Devpage extends Component {
                          </Col>
                          <Col xs={3}>
                          <Devcard 
-                         picture="logo.svg" 
+                         picture={Kristen}
                          title="Kristen Austin"
                          about="Allie likes cats and coffee"
                          github="https://github.com/knaustin"
@@ -40,7 +44,7 @@ class Devpage extends Component {
                          </Col>
                          <Col xs={3}>
                          <Devcard 
-                         picture="logo.svg" 
+                         picture={Michelle} 
                          title="Michelle Poplin"
                          about="Allie likes cats and coffee"
                          github=""
@@ -49,7 +53,7 @@ class Devpage extends Component {
                          </Col>
                          <Col xs={3}>
                          <Devcard 
-                         picture="logo.svg" 
+                         picture={Krista}
                          title="Krista Brehm"
                          about="Allie likes cats and coffee"
                          github="https://github.com/KbrehmCoding"

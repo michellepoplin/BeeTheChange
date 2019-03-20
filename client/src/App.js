@@ -5,6 +5,7 @@ import User from "./pages/User";
 // import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Devpage from "./pages/Devpage";
+import './App.scss';
 // import { Security, ImplicitCallback } from '@okta/okta-react';
 // const config = {
 //   issuer: 'https://dev-378075.okta.com/oauth2/default',
