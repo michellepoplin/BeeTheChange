@@ -7,7 +7,6 @@ import Paypal from "../paypal/paypal";
 
 function Tiers(props) {
   return (
-
     <Card className={"tierCard"}>
       <Card.Body>
         <Card.Title>{props.tierlevel}</Card.Title>

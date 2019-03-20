@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import FrontNav from "../components/FrontNav";
 import { Grid, Row, Col } from 'react-flexbox-grid';
@@ -69,6 +68,5 @@ class Home extends Component {
   };
 }
 export default Home;
-
 
 

@@ -23,10 +23,8 @@ import Nav from 'react-bootstrap/Nav';
       {' Bee The Change '}
       </span>
       </Navbar.Brand>
-      
-      <Nav.Link href="#home" className={"MainNav"}>|| Home</Nav.Link>
-      <Nav.Link href="#features" className={"MainNav"}>|| Inbox</Nav.Link>
-      <Nav.Link href="#pricing" className={"MainNav"}>|| Settings</Nav.Link>
+      <Nav.Link href="/" className={"MainNav"}>|| Home</Nav.Link>
+      <Nav.Link href="/settings" className={"MainNav"}>|| Settings</Nav.Link>
       <span className={'navbarSpan'}></span>
     <Form inline>
       <FormControl type="text" placeholder="Find A Hive To Sponsor" className="mr-sm-2" />

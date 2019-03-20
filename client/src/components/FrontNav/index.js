@@ -9,6 +9,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Logo from '../../../src/logo.svg';
 
+
 function FrontNav(props) {
   return (
     <Navbar className="navbarStyle" expand="lg">

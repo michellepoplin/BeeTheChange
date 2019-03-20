@@ -12,6 +12,7 @@ import './Post.scss'
 //             </p>
 //         </Container>
 
+
 class Post extends Component {
     render() {
         return (
