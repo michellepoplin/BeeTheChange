@@ -1,9 +1,7 @@
-const fs = require('fs');
-const path = require('path');
+const mongoose = require('mongoose');
 
-module.exports = (app) => {
-    // API routes
-    fs.readdirSync(__dirname + '/api/').forEach((file) => {
-        require(`./api/${file.substr(0, file.indexOf('.'))}`)(app);
-    });
-};
+const FarmerSchema = new mongoose.Schema({
+
+});
+
+module.exports = mongoose.model('Farmer', FarmerSchema);

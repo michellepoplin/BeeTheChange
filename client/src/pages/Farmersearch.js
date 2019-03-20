@@ -1,60 +1,60 @@
 import React, { Component } from "react";
 import Nav from "../components/Nav";
-import Wrapper from "../components/Wrapper";
 import Footer from "../components/Footer";
-import Usercard from '../components/Usercard';
-import Usercover from "../components/Usercover";
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import Tiers from '../components/Tiers';
 import Container from 'react-bootstrap/Container';
-import Post from '../components/Post';
-import Postform from "../components/Postform";
-import Button from 'react-bootstrap/Button';
+import API from "../utils/API";
+import SearchForm from "../components/SearchForm";
+import SearchResults from "../components/SearchResults";
 
 class Farmsearch extends Component {
-    //   state = {
+    state = {
+        search: "",
+        farmers: [],
+        results: [],
+        error: ""
+    };
 
-    //   };
-
-    render() {
-        return (
-            <Wrapper>
-
-                <Nav />
-                <Grid fluid>
-                    <Container>
-                        <Row>
-                            <Col xs={3}>
-                                <Container>
-                                    <Usercard />
-                                </Container>
-                            </Col>
-                            <Col xs={6}>
-                                <Container>
-                                    <Usercover />
-                                    <Container>
-                                        <Postform />
-                                    <Post>This is a Post</Post>
-                                    <Post>This is a Post</Post>  
-                                    <Post>This is a Post</Post>
-                                    </Container>
-                                </Container>
-                            </Col>
-                            <Col xs={3}>
-                                <Container>
-                                    <Button>Follow</Button>
-                                    <Tiers />
-                                </Container>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Grid>
-                <Footer>This Will Be The Footer Routes</Footer>
-
-            </Wrapper>
-        )
+    componentDidMount() {
+        API.getFarmerList()
+            .then(res => this.setState({ farmers: res.data.message }))
+            .catch(err => console.log(err));
     }
 
+    handleInputChange = event => {
+        this.setState({ search: event.target.value });
+    };
+
+    handleFormSubmit = event => {
+        event.preventDefault();
+        API.getFarmersOfName(this.state.search)
+            .then(res => {
+                if (res.data.status === "error") {
+                    throw new Error(res.data.message);
+                }
+                this.setState({ results: res.data.message, error: "" });
+            })
+            .catch(err => this.setState({ error: err.message }));
+    };
+    render() {
+        return (
+            <div>
+                <Container>
+                    <Nav />
+                    <h1 className="text-center">Search for a Farmer!</h1>
+                    <SearchForm
+                        handleFormSubmit={this.handleFormSubmit}
+                        handleInputChange={this.handleInputChange}
+                        farmers={this.state.farmers}
+                    />
+                    <SearchResults results={this.state.results} />
+                    <Footer />
+                </Container>
+            </div>
+        );
+    }
 }
+
+export default Search;
+
 
 export default Farmsearch;

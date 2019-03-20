@@ -1,11 +1,10 @@
-const path = require("path");
-const router = require("express").Router();
+const Farmer = require('../../models/Farmer');
 
-router.use();
-router.use();
+module.exports = (app) => {
+    app.get('/api/farmers', (req, res, next) => {
+        Farmer.find()
+            .exec()
+            .then((farmer) => res.json(farmer))
+            .catch((err) => next(err));
+    });
 
-router.use(function (req, res) {
-    res.sendFile(path.join(__dirname, "../../client/build/index.html"));
-});
-
-module.exports = router;
