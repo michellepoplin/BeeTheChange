@@ -1,6 +1,8 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
-import './Tiers.scss'
+import './Tiers.scss';
+import Paypal from "../paypal/paypal";
+
 
 
 function Tiers(props) {
@@ -13,7 +15,7 @@ function Tiers(props) {
         <Card.Text>
           {props.tierdescription}
         </Card.Text>
-        <button className={"tierButt"}>Sponsor</button>
+        <Paypal/>
       </Card.Body>
     </Card>
 

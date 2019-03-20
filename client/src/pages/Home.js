@@ -20,13 +20,13 @@ class Home extends Component {
       <Wrapper>
         <FrontNav />
         {/* <Grid fluid> */}
-        {/* <Section>
+        <Section>
           <Row>
             <Col>
               <Login/>
             </Col>
           </Row>
-        </Section> */}
+        </Section>
         <Section>
           <Row>
             <Col xs={12}>

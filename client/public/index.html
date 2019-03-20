@@ -33,15 +33,14 @@ s" type="text/css" rel="stylesheet"/>
 
     <script type="text/javascript">
       var oktaSignIn = new OktaSignIn({
-        baseUrl: "{{ localhost:3000 }}",
+        baseUrl: "{{ 'https://dev-378075.okta.com' }}",
         clientId: "{{ 0oadeos7hpHf0VuME356}}",
         authParams: {
-          issuer: "{{ localhost:3000 }}/oauth2/default",
+          issuer: "{{ 'https://dev-378075.okta.com' }}/oauth2/default",
           responseType: ["token", "id_token"],
           display: "page"
         }
       });
-
       if (oktaSignIn.token.hasTokensInUrl()) {
         oktaSignIn.token.parseTokensFromUrl(
           // If we get here, the user just logged in.
