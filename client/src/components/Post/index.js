@@ -1,7 +1,6 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
 import {Component} from "react";
-// import Button from 'react-bootstrap/Button';
 import './Post.scss'
 
 

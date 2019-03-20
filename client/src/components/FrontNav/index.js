@@ -20,7 +20,7 @@ import Nav from 'react-bootstrap/Nav';
         alt="Bee The Change Logo"
       />
       <span className='textheader'>
-      {' Bee The Change '}
+        {' Bee The Change '}
       </span>
       </Navbar.Brand>
       
@@ -35,6 +35,7 @@ import Nav from 'react-bootstrap/Nav';
   
   </Navbar>
     );
+
 }
 
 export default FrontNav;

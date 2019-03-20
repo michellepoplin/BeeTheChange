@@ -32,7 +32,6 @@ const Footer = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-   
     </MDBFooter>
   );
 }

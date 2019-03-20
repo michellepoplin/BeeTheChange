@@ -20,12 +20,15 @@ function Devcard(props) {
       <p className={"devAbout"}>{props.about}</p>
     </Row>
       <Row>
+
       <a href={props.github} ><i className="fab fa-github devLink"></i></a>  
       <a href={props.linkedin} ><i className="fab fa-linkedin devLink"></i></a>
  </Row>
 </div>
 </Col>
-    );
+
+    </Container>
+  );
 }
 
 export default Devcard;

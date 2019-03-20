@@ -61,7 +61,6 @@ class Devpage extends Component {
                          />
                          </Col>
                      </Row>
-
                     </Container>
                 </Grid>
                 <Footer />
