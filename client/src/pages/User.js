@@ -11,6 +11,7 @@ import PostsContainer from '../components/PostsContainer';
 import Postform from "../components/Postform";
 import Followcard from '../components/Followcard';
 import Aboutuser from '../components/Aboutuser';
+import Button from 'react-bootstrap/Button';
 
 const messages = [
     {
@@ -61,8 +62,6 @@ class User extends Component {
     render() {
         return (
             <Wrapper>
-
-
                 <Mainnav />
                 <Usercover>
                     <Row>
@@ -75,7 +74,6 @@ class User extends Component {
                         </Col>
                     </Row>
                 </Usercover>
-
                 <Grid fluid>
                     <Container divStyle={"margin-bottom: 50px;"}>
                         <Row>
@@ -110,17 +108,17 @@ Duis tristique at turpis eu iaculis. Mauris cursus porta urna ut faucibus. Donec
 
                             </Col>
                             <Col md={3}>
-                                <Tiers 
+                                <Tiers
                                 tierlevel="Getting Started"
                                 tierprice="5$"
                                 tierdescription="Help pay for the care of the Bee's and get updates"
                                 />
-                                <Tiers 
+                                <Tiers
                                 tierlevel="Help A Hive"
                                 tierprice="10$"
                                 tierdescription="Sponsor Bee care and get 1 bottle of honey"
                                 />
-                                <Tiers 
+                                <Tiers
                                 tierlevel="Start A Hive"
                                 tierprice="150$"
                                 tierdescription="Start a hive, get 10% of the honey output every season"
@@ -130,11 +128,8 @@ Duis tristique at turpis eu iaculis. Mauris cursus porta urna ut faucibus. Donec
 
                     </Container>
                 </Grid>
-
                 <Footer />
-
             </Wrapper>
-
         )
     }
 }

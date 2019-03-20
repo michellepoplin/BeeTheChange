@@ -4,8 +4,7 @@ import './Tiers.scss'
 
 
 function Tiers(props) {
-    return (
-
+  return (
 <Card className={"tierCard"}>
   <Card.Body>
     <Card.Title>{props.tierlevel}</Card.Title>
@@ -16,8 +15,7 @@ function Tiers(props) {
    <button className={"tierButt"}>Sponsor</button>
   </Card.Body>
 </Card>
-
-);
+  );
 }
 
 export default Tiers;
