@@ -12,6 +12,15 @@ import './Post.scss'
 //             </p>
 //         </Container>
 
+function Post(props) {
+    return (
+        <Container className="post">
+            <p>
+                {this.props.user}{this.props.message}
+            </p>
+        </Container>
+
+
 class Post extends Component {
     render() {
         return (

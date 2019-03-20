@@ -9,21 +9,20 @@ import ProfilePicModal from '../../components/Modals/ProfilePicModal/';
 
 
 function Usercard(props) {
-  return (
 
-    <Container className={"profilePicture"}>
-      <Col md={6}></Col>
-      <Col md={6}>
-        <Row>
-          <Image src="https://via.placeholder.com/250" roundedCircle />
-          <ProfilePicModal/>
-        </Row>
-        <Row><h3 className={"userHeader"}>Bob The Farmer</h3></Row>
-      </Col>
-    </Container>
+    return (
+
+<Container className={"profilePicture"}>
+<Col md={6}></Col>
+<Col md={6}>
+<Row>
+  <Image src="https://via.placeholder.com/250" roundedCircle />
+  </Row>
+  <Row><h3 className={"userHeader"}>Bob The Farmer</h3></Row>
+  </Col>
+</Container>
 
 
-  );
-}
+    );
 
 export default Usercard;
