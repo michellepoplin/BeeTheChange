@@ -2,16 +2,14 @@ import React from "react";
 import "./Nav.scss";
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../../../src/logo.svg';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
+import SearchForm from "../SearchForm/index";
 
   function Mainnav(props) {
     return (
 
       <Navbar className="navbarStyle">
-      <Navbar.Brand className="navheader" href="#home">     
+      <Navbar.Brand className="navheader" href="#home">
       <img
         src={Logo}
         width="55"
@@ -26,12 +24,9 @@ import Nav from 'react-bootstrap/Nav';
       <Nav.Link href="/" className={"MainNav"}>|| Home</Nav.Link>
       <Nav.Link href="/settings" className={"MainNav"}>|| Settings</Nav.Link>
       <span className={'navbarSpan'}></span>
-    <Form inline>
-      <FormControl type="text" placeholder="Find A Hive To Sponsor" className="mr-sm-2" />
-      <Button variant="outline-info" className={"MainNavButt"}>Search</Button>
-    </Form>
- 
-  
+      <SearchForm/>
+
+
   </Navbar>
     );
 }

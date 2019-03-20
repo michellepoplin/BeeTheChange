@@ -6,6 +6,28 @@ import API from "../utils/API";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 
+const Farmers = [
+    {
+        id: 'farmer11',
+        farmer: 'Test farmer 1',
+    },
+    {
+        id: 'farmer12',
+        farmer: 'Test farmer 2',
+    },
+    {
+        id: 'farmer13',
+        farmer: 'Test farmer 3',
+    },
+    {
+        id: 'farmer14',
+        farmer: 'Test farmer 4',
+    },
+    {
+        id: 'farmer15',
+        farmer: 'Test farmer 5',
+    }
+];
 class Farmsearch extends Component {
     state = {
         search: "",
@@ -16,7 +38,7 @@ class Farmsearch extends Component {
 
     componentDidMount() {
         API.getFarmerList()
-            .then(res => this.setState({ farmers: res.data.message }))
+            .then(res => this.setState({ farmers: res.data.farmer }))
             .catch(err => console.log(err));
     }
 
@@ -29,11 +51,11 @@ class Farmsearch extends Component {
         API.getFarmersOfName(this.state.search)
             .then(res => {
                 if (res.data.status === "error") {
-                    throw new Error(res.data.message);
+                    throw new Error(res.data.farmer);
                 }
-                this.setState({ results: res.data.message, error: "" });
+                this.setState({ results: res.data.farmer, error: "" });
             })
-            .catch(err => this.setState({ error: err.message }));
+            .catch(err => this.setState({ error: err.farmer }));
     };
     render() {
         return (
@@ -46,7 +68,7 @@ class Farmsearch extends Component {
                         handleInputChange={this.handleInputChange}
                         farmers={this.state.farmers}
                     />
-                    <SearchResults results={this.state.results} />
+                    <SearchResults Farmers={farmer} />
                     <Footer />
                 </Container>
             </div>
