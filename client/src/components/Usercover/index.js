@@ -1,7 +1,6 @@
 import React from "react";
 import Image from 'react-bootstrap/Image';
 import UserCoverModal from '../../components/Modals/UserCoverModal/';
-import '../../components/Modals/UserCoverModal';
 
 
 import './Usercover.scss';
