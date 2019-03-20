@@ -12,4 +12,4 @@ function Usercover(props) {
 
 }
 
-export default UserCover;
+export default Usercover;

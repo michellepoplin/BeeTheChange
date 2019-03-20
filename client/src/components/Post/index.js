@@ -13,16 +13,17 @@ function Post(props) {
                 {this.props.user}{this.props.message}
             </p>
         </Container>
-
-
-class Post extends Component {
-    render() {
-        return (
-            <Container>
-                {this.props.user} {this.props.message}
-            </Container>
-        );
-    }
+    )
 }
+
+// class Post extends Component {
+//     render() {
+//         return (
+//             <Container>
+//                 {this.props.user} {this.props.message}
+//             </Container>
+//         );
+//     }
+// }
 
 export default Post;
