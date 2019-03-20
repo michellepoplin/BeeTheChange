@@ -5,6 +5,7 @@ import Image from 'react-bootstrap/Image';
 import './Devcard.scss'
 
 function Devcard(props) {
+
     return (
       <Col md={12}>
         <div className={"devCard container"}>
@@ -19,12 +20,24 @@ function Devcard(props) {
       <p className={"devAbout"}>{props.about}</p>
     </Row>
       <Row>
+<<<<<<< HEAD
       <a href={props.github} ><i className="fab fa-github devLink"></i></a>  
       <a href={props.linkedin} ><i className="fab fa-linkedin devLink"></i></a>
  </Row>
 </div>
 </Col>
     );
+=======
+      <a href={props.github}><i class="fab fa-github"></i></a>
+      
+      <a href={props.linkedin}><i class="fab fa-linkedin"></i></a>
+      </Row>
+    </Card.Text>
+        </Card.Body>
+      </Card>
+    </Container>
+  );
+>>>>>>> 35d6b953f675b85920c0988461299e8c3064ece1
 }
 
 export default Devcard;
