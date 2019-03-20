@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 function Devcard(props) {
+
     return (
         <Container>
 <Card>
@@ -18,10 +19,10 @@ function Devcard(props) {
       <a href={props.linkedin}><i class="fab fa-linkedin"></i></a>
       </Row>
     </Card.Text>
-  </Card.Body>
-</Card>
-</Container>
-    );
+        </Card.Body>
+      </Card>
+    </Container>
+  );
 }
 
 export default Devcard;

@@ -57,9 +57,10 @@ class Devpage extends Component {
                          />
                          </Col>
                      </Row>
+
                     </Container>
                 </Grid>
-                <Footer>This Will Be The Footer Routes</Footer>
+                <Footer />
 
             </Wrapper>
         )
