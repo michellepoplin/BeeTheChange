@@ -5,7 +5,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 // import images from "../../assets/images"
 // import characters from "../../sliderimg.json"
-// import "./coverPic.scss";
+import "./coverPic.scss";
 
 
 
@@ -44,7 +44,7 @@ class Slider extends React.Component {
               src="https://images.unsplash.com/photo-1501261942928-5f1a1aec5fda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
               alt="First slide"
             />
-            <Carousel.Caption>
+            <Carousel.Caption className="capOne">
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
@@ -56,7 +56,7 @@ class Slider extends React.Component {
               alt="second slide"
             />
   
-            <Carousel.Caption>
+            <Carousel.Caption className="capTwo">
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
@@ -68,7 +68,7 @@ class Slider extends React.Component {
               alt="Third slide"
             />
   
-            <Carousel.Caption>
+            <Carousel.Caption className="capThree">
               <h3>Third slide label</h3>
               <p>
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
