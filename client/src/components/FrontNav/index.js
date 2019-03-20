@@ -3,10 +3,9 @@ import "./frontNav.scss";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
 import Logo from '../../../src/logo.svg';
+import SearchForm from "../SearchForm/index";
+
 
 
 function FrontNav(props) {
@@ -38,10 +37,7 @@ function FrontNav(props) {
             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="light">Search</Button>
-        </Form>
+        <SearchForm/>
       </Navbar.Collapse>
     </Navbar>
 
