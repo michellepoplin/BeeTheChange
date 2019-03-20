@@ -1,23 +1,19 @@
 [
     {
         "id": 1,
-        "image": "img1.jpg",
-        "clicked": false
+        "image": "img1.jpg" 
     },
     {
         "id": 2,
-        "image": "img2.jpg",
-        "clicked": false
+        "image": "img2.jpg"  
     },
     {
         "id": 3,
-        "image": "img3.jpg",
-        "clicked": false
+        "image": "img3.jpg" 
     },
     {
         "id": 4,
-        "image": "img4.jpg",
-        "clicked": false
+        "image": "img4.jpg"
     }
     
     
