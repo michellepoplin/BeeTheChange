@@ -12,7 +12,7 @@ function Postform(props) {
     <Form.Label className={"formLabel"}>Update your sponsors!</Form.Label>
     <Form.Control as="textarea" rows="3" />
   </Form.Group>
-  <button className={"postButton"}>Post</button>
+  <Button className={"postButton"}>Post</Button>
   </Form>
   </Container>
 

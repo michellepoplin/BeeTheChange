@@ -1,8 +1,8 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import "./Followcard.scss";
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
 
 
 
@@ -16,7 +16,7 @@ function Followcard() {
         </Col>
           <Col md={8}>
           <Row>
-              
+
               <button className={"followCardButt"}>Follow</button>
           </Row>
           <Row>
