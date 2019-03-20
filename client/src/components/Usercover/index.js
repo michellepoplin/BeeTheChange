@@ -1,6 +1,9 @@
 import React from "react";
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
+import UserCoverModal from '../../components/Modals/UserCoverModal/';
+import '../../components/Modals/UserCoverModal';
+
 
 import './Usercover.scss'
 
@@ -8,25 +11,37 @@ var ButtonStyle = {
     width: "60px"
 };
 
-var modal = document.getElementById('UserCoverModal');
 
-window.onClick = function (event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
+class UserCover extends React.Component {
+    constructor(props, context) {
+        super(props, context);
+
+        this.handleShow = this.handleShow.bind(this);
+        this.handleClose = this.handleClose.bind(this);
+
+        this.state = {
+            show: false,
+        };
     }
+    handleClose() {
+        this.setState({ show: false });
+    }
+
+    handleShow() {
+        this.setState({ show: true });
+    }
+    render() {
+        return (
+            <div>
+                <Image src="https://via.placeholder.com/800x400" fluid />
+                <Button style={ButtonStyle} variant="primary" onClick={this.handleShow}>
+                    Edit
+                </Button>
+                <UserCoverModal />
+            </div>
+        );
+    }
+
 }
 
-function Usercover(props) {
-    return (
-        <div>
-            <Image src="https://via.placeholder.com/800x400" fluid />
-            <Button style={ButtonStyle} variant="primary" onClick={this.handleShow}>
-                Edit
-            </Button>
-        </div>
-
-
-    );
-}
-
-export default Usercover;
+export default UserCover;

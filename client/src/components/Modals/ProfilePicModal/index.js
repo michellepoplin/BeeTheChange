@@ -3,10 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 
-const fileInput = document.getElementById('file-input');
-
-fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
-
 class ProfilePicModal extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -34,7 +30,6 @@ class ProfilePicModal extends React.Component {
                 <Modal id="ProfilePicModal" show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Add Your Profile Picture</Modal.Title>
-                        <span onClick={document.getElementById('ProfilePicModal').style.display='none'} class="w3-button w3-display-topright">&times;</span>
                     </Modal.Header>
                     <Modal.Body>
                         <input type="file" accept="image/*" id="file-input"></input>
@@ -53,5 +48,4 @@ class ProfilePicModal extends React.Component {
     }
 }
 
-// export default ProfilePicModal;
-render(<ProfilePicModal />);
+export default ProfilePicModal;

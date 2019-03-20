@@ -31,14 +31,9 @@ class UserCoverModal extends React.Component {
     render() {
         return (
             <>
-                <Button variant="primary" onClick={this.handleShow}>
-                    Launch demo modal
-                </Button>
-
                 <Modal id="UserCoverModal" show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Add Your Profile Picture</Modal.Title>
-                        <span onClick={document.getElementById('UserCoverModal')}>&times;</span>
                     </Modal.Header>
                     <Modal.Body>
                         <input type="file" accept="image/*" id="file-input"></input>
@@ -57,5 +52,4 @@ class UserCoverModal extends React.Component {
     }
 }
 
-// export default UserCoverModal;
-render(<UserCoverModal />);
+export default UserCoverModal;
