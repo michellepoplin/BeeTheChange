@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import User from "./pages/User";
 import Faq from "./pages/Faq"
 // import Devpage from './pages/Devpage';
-// import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Devpage from "./pages/Devpage";
+import './App.scss';
 // import { Security, ImplicitCallback } from '@okta/okta-react';
 // const config = {
 //   issuer: 'https://dev-378075.okta.com/oauth2/default',
@@ -21,16 +21,15 @@ function App() {
   return (
     <Router>
       <div>
-      
-        {/* <Switch>
 
-          <Route exact path="/user" component={User} />
-          {/* <Security issuer={config.issuer} client_id={config.client_id} redirect_uri={config.redirect_uri}>
-          <Route path='/' exact={true} component={Home}/>
-          <Route path='/implicit/callback' component={ImplicitCallback}/>
 
-        </Security> */}
-        {/* </Switch> */}
+        <Switch>
+          <Route exact path="/" component={User} />
+          <Security issuer={config.issuer} client_id={config.client_id} redirect_uri={config.redirect_uri}>
+            <Route path='/' exact={true} component={Home}/>
+            <Route path='/implicit/callback' component={ImplicitCallback}/>
+          </Security>
+        </Switch>
         {/* <Switch>
           <Route exact path="/developers" component={Devpage} />
         </Security>

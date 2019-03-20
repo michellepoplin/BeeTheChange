@@ -3,10 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import './Usercard.scss';
 import {Row, Col} from 'react-bootstrap';
+import ProfilePicModal from '../../components/Modals/ProfilePicModal/';
+
 
 
 
 function Usercard(props) {
+
     return (
 
 <Container className={"profilePicture"}>
@@ -21,6 +24,5 @@ function Usercard(props) {
 
 
     );
-}
 
 export default Usercard;
