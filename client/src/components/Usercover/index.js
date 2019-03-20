@@ -9,7 +9,6 @@ function Usercover(props) {
   {props.children}
 </section>
 );
-
 }
 
 export default Usercover;

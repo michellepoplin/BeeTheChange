@@ -11,6 +11,7 @@ import Post from '../components/Post';
 import Postform from "../components/Postform";
 import Followcard from '../components/Followcard';
 import Aboutuser from '../components/Aboutuser';
+import Button from 'react-bootstrap/Button';
 
 
 class User extends Component {
@@ -22,7 +23,6 @@ class User extends Component {
     render() {
         return (
             <Wrapper>
-
                 <Mainnav />
                 <Usercover>
                     <Row>
@@ -53,17 +53,17 @@ Duis tristique at turpis eu iaculis. Mauris cursus porta urna ut faucibus. Donec
 Duis tristique at turpis eu iaculis. Mauris cursus porta urna ut faucibus. Donec ut sapien sit amet justo consequat eleifend. Maecenas consectetur nulla eget magna faucibus consequat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris consectetur ipsum quis convallis mollis. Nulla maximus condimentum tellus, nec ornare purus. In consectetur hendrerit scelerisque. Donec mollis scelerisque leo. Mauris tempor in nibh nec venenatis. Praesent ultricies est augue, quis convallis nunc iaculis quis. Curabitur tempus imperdiet tempus. Nullam ut aliquet ligula, non porta tortor. Aliquam tincidunt odio ac lorem pellentesque blandit.</Post>
                             </Col>
                             <Col md={3}>
-                                <Tiers 
+                                <Tiers
                                 tierlevel="Getting Started"
                                 tierprice="5$"
                                 tierdescription="Help pay for the care of the Bee's and get updates"
                                 />
-                                <Tiers 
+                                <Tiers
                                 tierlevel="Help A Hive"
                                 tierprice="10$"
                                 tierdescription="Sponsor Bee care and get 1 bottle of honey"
                                 />
-                                <Tiers 
+                                <Tiers
                                 tierlevel="Start A Hive"
                                 tierprice="150$"
                                 tierdescription="Start a hive, get 10% of the honey output every season"
@@ -74,7 +74,6 @@ Duis tristique at turpis eu iaculis. Mauris cursus porta urna ut faucibus. Donec
                 </Grid>
                 <Footer />
             </Wrapper>
-
         )
     }
 

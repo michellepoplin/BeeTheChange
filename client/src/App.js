@@ -5,39 +5,13 @@ import Main from "./pages/Main";
 import Devpage from "./pages/Devpage";
 import Farmersearch from "./pages/Farmersearch";
 import './App.scss';
-// import { Security, ImplicitCallback } from '@okta/okta-react';
-// const config = {
-//   issuer: 'https://dev-378075.okta.com/oauth2/default',
-//   redirect_uri: window.location.origin + '/implicit/callback',
-//   client_id: '{clientId}'
-// }
-
-
-
-
 
 function App() {
   return (
     <Router>
       <div>
-
-     
-{/* <Switch>
-
-         <Route exact path="/user" component={User} />
-           <Security issuer={config.issuer} client_id={config.client_id} redirect_uri={config.redirect_uri}>
-           <Route path='/' exact={true} component={Home}/>
-           <Route path='/implicit/callback' component={ImplicitCallback}/>
-
-         </Security> 
-         </Switch> 
-         <Switch>
-         <Route exact path="/developers" component={Devpage} />        </Security>
-         </Switch>  */}
-
         <Switch>
           <Route exact path="/developers" component={Devpage} />
-
           <Route exact path="/" component={Main} />
           <Route exact path="/user" component={User} />
           <Route exact path="/developers" component={Devpage} />
