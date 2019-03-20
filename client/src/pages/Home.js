@@ -1,50 +1,3 @@
-// import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
-// import { withAuth } from '@okta/okta-react';
-
-
-// withAuth(class Home extends Component {
-//     state = { authenticated: null };
-
-//     checkAuthentication = async() => {
-//         const authenticated = await this.props.auth.isAuthenticated();
-//         if (authenticated !== this.state.authenticated) {
-//             this.setState({ authenticated });
-//         }
-//     }
-
-//     async componentDidMount() {
-//         this.checkAuthentication();
-//     }
-
-//     async componentDidUpdate() {
-//         this.checkAuthentication();
-//     }
-
-//     login = async() => {
-//         this.props.auth.login('/');
-//     }
-
-//     logout= async() => {
-//         this.props.auth.logout('/');
-//     }
-
-//     render() {
-//         if (this.state.authenticated === null) return null;
-
-//         const button = this.state.authenticated ?
-//             <button onClick={this.logout}>Logout</button> :
-//             <button onClick={this.login}>Login</button>;
-
-//         return (
-//             <div>
-//                 {button}
-//             </div>
-//         );
-//     }
-// });
-
-// export default withAuth;
 
 import React, { Component } from "react";
 import FrontNav from "../components/FrontNav";
@@ -55,10 +8,10 @@ import SectionB from "../components/SectionB";
 import SectionC from "../components/SectionC";
 import Footer from "../components/Footer";
 import Wrapper from "../components/Wrapper";
+import Login from "../components/auth/Login"
 // import Container from "react-bootstrap/Container";
 import Section from '../components/Section';
 import { Container } from "mdbreact";
-
 
 
 class Home extends Component {
@@ -67,6 +20,13 @@ class Home extends Component {
       <Wrapper>
         <FrontNav />
         {/* <Grid fluid> */}
+        {/* <Section>
+          <Row>
+            <Col>
+              <Login/>
+            </Col>
+          </Row>
+        </Section> */}
         <Section>
           <Row>
             <Col xs={12}>
@@ -107,7 +67,7 @@ class Home extends Component {
       </Wrapper>
     )
   };
-};
+}
 export default Home;
 
 

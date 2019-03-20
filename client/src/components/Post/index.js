@@ -15,7 +15,7 @@ import './Post.scss'
 class Post extends Component {
     render() {
         return (
-            <Container>
+            <Container className="post">
                 {this.props.user} {this.props.message}
             </Container>
         );
