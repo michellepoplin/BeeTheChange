@@ -11,10 +11,6 @@ import Michelle from '../assets/images/michelle.png';
 import Krista from '../assets/images/krista.jpg';
 
 class Devpage extends Component {
-    //   state = {
-
-    //   };
-
     render() {
         return (
             <Wrapper>
