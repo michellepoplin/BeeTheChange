@@ -2,7 +2,9 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-
+var ButtonStyle = {
+    width: "60px"
+};
 // const fileInput = document.getElementById('file-input');
 
 // fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
@@ -31,6 +33,9 @@ class UserCoverModal extends React.Component {
     render() {
         return (
             <>
+                <Button style={ButtonStyle} variant="primary" onClick={this.handleShow}>
+                    Edit
+                </Button>
                 <Modal id="UserCoverModal" show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Add Your Profile Picture</Modal.Title>

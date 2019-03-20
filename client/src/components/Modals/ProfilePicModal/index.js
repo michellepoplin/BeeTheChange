@@ -2,6 +2,9 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
+var ButtonStyle = {
+    width: "60px"
+};
 
 class ProfilePicModal extends React.Component {
     constructor(props, context) {
@@ -27,6 +30,9 @@ class ProfilePicModal extends React.Component {
     render() {
         return (
             <>
+                <Button style={ButtonStyle} variant="primary" onClick={this.handleShow}>
+                    Edit
+                </Button>
                 <Modal id="ProfilePicModal" show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title>Add Your Profile Picture</Modal.Title>
