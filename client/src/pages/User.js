@@ -11,6 +11,7 @@ import PostsContainer from '../components/PostsContainer';
 import Postform from "../components/Postform";
 import Followcard from '../components/Followcard';
 import Aboutuser from '../components/Aboutuser';
+import Button from 'react-bootstrap/Button';
 
 const messages = [
     {
