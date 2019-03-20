@@ -27,7 +27,7 @@ function Devcard(props) {
 </div>
 </Col>
 
-    </Container>
+    
   );
 }
 

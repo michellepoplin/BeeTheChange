@@ -80,69 +80,47 @@ class User extends Component {
                             <Col md={3}>
                                 <Aboutuser />
                             </Col>
-<<<<<<< HEAD
-                                <Col xs={6}>
+                            <Col xs={6}>
+                                <Container>
+                                    <Usercover />
                                     <Container>
-                                        <Container>
-                                            <Postform />
-                                            <PostsContainer messages={messages} />
-                                        </Container>
+                                        <Postform />
+                                        <PostsContainer messages={messages} />
                                     </Container>
-=======
+                                </Container>
+                            </Col>
+                            <Col xs={3}>
+                                <Container>
+                                    <Button>Follow</Button>
+                                    <Tiers />
+                                </Container>
+
+                            </Col>
                             <Col md={3}>
                                 <Tiers
-                                tierlevel="Getting Started"
-                                tierprice="5$"
-                                tierdescription="Help pay for the care of the Bee's and get updates"
+                                    tierlevel="Getting Started"
+                                    tierprice="5$"
+                                    tierdescription="Help pay for the care of the Bee's and get updates"
                                 />
                                 <Tiers
-                                tierlevel="Help A Hive"
-                                tierprice="10$"
-                                tierdescription="Sponsor Bee care and get 1 bottle of honey"
+                                    tierlevel="Help A Hive"
+                                    tierprice="10$"
+                                    tierdescription="Sponsor Bee care and get 1 bottle of honey"
                                 />
                                 <Tiers
-                                tierlevel="Start A Hive"
-                                tierprice="150$"
-                                tierdescription="Start a hive, get 10% of the honey output every season"
+                                    tierlevel="Start A Hive"
+                                    tierprice="150$"
+                                    tierdescription="Start a hive, get 10% of the honey output every season"
                                 />
->>>>>>> 3d726ef08a61bd5a8240352049f4274a7d75602b
-                                </Col>
-                                <Col md={3}>
-                                    <Tiers
-                                        tierlevel="Getting Started"
-                                        tierprice="5$"
-                                        tierdescription="Help pay for the care of the Bee's and get updates"
-                                    />
-                                    <Tiers
-                                        tierlevel="Help A Hive"
-                                        tierprice="10$"
-                                        tierdescription="Sponsor Bee care and get 1 bottle of honey"
-                                    />
-                                    <Tiers
-                                        tierlevel="Start A Hive"
-                                        tierprice="150$"
-                                        tierdescription="Start a hive, get 10% of the honey output every season"
-                                    />
-                                </Col>
-                            
+                            </Col>
                         </Row>
 
                     </Container>
                 </Grid>
-                    <Footer />
+                <Footer />
             </Wrapper>
-<<<<<<< HEAD
-
-                )
-            }
-        }
-        
-=======
         )
     }
-
-
 }
 
->>>>>>> 3d726ef08a61bd5a8240352049f4274a7d75602b
 export default User;
