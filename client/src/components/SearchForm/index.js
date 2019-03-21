@@ -5,10 +5,10 @@ import Button from 'react-bootstrap/Button';
 
 function SearchForm(props) {
   return (
-    <Form inline className="search">
-      <FormControl type="text" placeholder="Find A Hive To Sponsor" className="mr-sm-2" />
+    <Form inline className="search" action="/search" onSubmit={props.handleFormSubmit}>
+      <FormControl type="text" name="name" placeholder="Find A Hive To Sponsor" className="mr-sm-2" />
         <div className="form-group">
-          <Button variant="outline-info" type="submit" onClick={props.handleFormSubmit} className={"MainNavButt"}>
+          <Button variant="outline-info" type="submit" className={"MainNavButt"}>
             Search
           </Button>
         </div>

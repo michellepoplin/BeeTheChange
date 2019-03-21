@@ -10,7 +10,8 @@ class Search extends Component {
     };
 
     componentDidMount() {
-        API.getFarmers()
+        const urlParams = new URLSearchParams(this.props.location.search);
+        API.getFarmers(urlParams.get('name') || '')
             .then(res => this.setState({ farmers: res.data }))
             .catch(err => console.log(err));
     }

@@ -26,7 +26,7 @@ function FrontNav(props) {
           <Nav.Link href="#Login" className={"FrontNav"}>|| Login</Nav.Link>
           <Nav.Link href="#Register" className={"FrontNav"}>|| Register</Nav.Link>
         </Nav>
-        <SearchForm />
+        <SearchForm handleFormSubmit={() => { console.log('Handle Form Submit'); }} />
       </Navbar.Collapse>
     </Navbar>
   );
