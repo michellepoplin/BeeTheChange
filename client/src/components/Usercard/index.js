@@ -1,13 +1,9 @@
-import React from "react";
-import {Component} from "react";
+import React, { Component } from "react";
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
-import './Usercard.scss';
 import { Row, Col } from 'react-bootstrap';
+import './Usercard.scss';
 import ProfilePicModal from '../../components/Modals/ProfilePicModal/';
-
-
-
 
 class Usercard extends Component {
   render() {
@@ -22,7 +18,7 @@ class Usercard extends Component {
         </Col>
       </Container>
     );
-  };
+  }
 }
 
 export default Usercard;

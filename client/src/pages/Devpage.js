@@ -14,7 +14,6 @@ class Devpage extends Component {
     render() {
         return (
             <Wrapper>
-
                 <Nav />
                 <Grid fluid>
                     <Container>
@@ -60,11 +59,9 @@ class Devpage extends Component {
                     </Container>
                 </Grid>
                 <Footer />
-
             </Wrapper>
         )
     }
-
 }
 
 export default Devpage;

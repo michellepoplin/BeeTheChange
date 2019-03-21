@@ -4,21 +4,16 @@ import User from "./pages/User";
 import Devpage from './pages/Devpage';
 import Home from "./pages/Home";
 
-
 function App() {
   return (
     <Router>
-      <div>
-        <Switch>
-            <Route path='/' exact={true} component={Home}/>
-            <Route exact path="/user" component={User} />
-            <Route exact path="/developers" component={Devpage} />
-        </Switch>
-      </div>
+      <Switch>
+          <Route path='/' exact={true} component={Home}/>
+          <Route exact path="/user" component={User} />
+          <Route exact path="/developers" component={Devpage} />
+      </Switch>
     </Router>
   );
 }
 
 export default App;
-
-

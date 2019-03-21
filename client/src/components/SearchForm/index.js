@@ -1,5 +1,4 @@
 import React from "react";
-// import "./style.css";
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
@@ -35,5 +34,3 @@ function SearchForm(props) {
 }
 
 export default SearchForm;
-
-

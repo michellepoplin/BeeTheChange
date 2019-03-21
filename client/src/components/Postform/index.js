@@ -5,18 +5,17 @@ import Form from 'react-bootstrap/Form';
 import './Postform.scss'
 
 function Postform(props) {
-    return (
-<Container>
-<Form className={'postForm'}>
-<Form.Group controlId="exampleForm.ControlTextarea1">
-    <Form.Label className={"formLabel"}>Update your sponsors!</Form.Label>
-    <Form.Control as="textarea" rows="3" />
-  </Form.Group>
-  <Button className={"postButton"}>Post</Button>
-  </Form>
-  </Container>
-
-    );
+  return (
+    <Container>
+      <Form className={'postForm'}>
+        <Form.Group controlId="exampleForm.ControlTextarea1">
+          <Form.Label className={"formLabel"}>Update your sponsors!</Form.Label>
+          <Form.Control as="textarea" rows="3" />
+        </Form.Group>
+        <Button className={"postButton"}>Post</Button>
+      </Form>
+    </Container>
+  );
 }
 
 export default Postform;

@@ -10,7 +10,6 @@ import Wrapper from "../components/Wrapper";
 import Section from '../components/Section';
 import { Container } from "mdbreact";
 
-
 class Home extends Component {
   render() {
     return (
@@ -57,6 +56,5 @@ class Home extends Component {
     )
   };
 }
+
 export default Home;
-
-

@@ -3,8 +3,6 @@ import Card from 'react-bootstrap/Card';
 import './Tiers.scss';
 import Paypal from "../paypal/paypal";
 
-
-
 function Tiers(props) {
   return (
     <Card className={"tierCard"}>
@@ -17,10 +15,7 @@ function Tiers(props) {
         <Paypal/>
       </Card.Body>
     </Card>
-
   );
 }
 
 export default Tiers;
-
-//donation tiers

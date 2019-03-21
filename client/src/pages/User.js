@@ -56,7 +56,6 @@ class User extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        // this.searchPuppies(this.state.search);
     };
 
     render() {
@@ -94,7 +93,6 @@ class User extends Component {
                                     <Button>Follow</Button>
                                     <Tiers />
                                 </Container>
-
                             </Col>
                             <Col md={3}>
                                 <Tiers
