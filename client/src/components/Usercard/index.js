@@ -22,7 +22,7 @@ function Usercard(props) {
       </Container>
     );
   }
-}
+
 
 export default Usercard;
 

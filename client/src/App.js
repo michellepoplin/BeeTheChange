@@ -5,6 +5,8 @@ import Search from "./pages/Search";
 import Settings from "./pages/Settings";
 import Devpage from './pages/Devpage';
 import Home from "./pages/Home";
+import User from './pages/User'
+// import Farmsearch from ".pages/Farmsearch"
 
 
 function App() {
@@ -14,12 +16,12 @@ function App() {
           <Route path="/" exact={true} component={Home} />
           <Route exact path="/farmer/:id" component={Farmer} />
           <Route exact path="/search" component={Search} />
+          <Route exact path="/user" component={User} />
           {/* TODO: Update Settings To Not Require User Id Param After Authentication Is Implemented */}
           <Route exact path="/settings/:id" component={Settings} />
           <Route exact path="/developers" component={Devpage} />
-          <Route exact path="/farmersearch" component={Farmersearch} />
+          {/* <Route exact path="/farmersearch" component={Farmsearch} /> */}
         </Switch> 
-      </div>
     </Router>
   );
 }
