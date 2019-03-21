@@ -10,7 +10,7 @@ function SectionB(props) {
   {props.children}
 
   <div id="capB">
-  <p>I like BEES!</p>
+  <p>DO YOUR PART TO HELP SAVE THE BEES!</p>
 </div>
 </section>
 
