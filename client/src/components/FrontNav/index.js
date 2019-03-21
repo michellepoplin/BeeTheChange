@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import "./frontNav.scss";
 import Logo from '../../../src/logo.svg';
-// import SearchForm from "../SearchForm/index";
+import SearchForm from '../SearchForm';
 
 function FrontNav(props) {
   return (
@@ -16,17 +16,17 @@ function FrontNav(props) {
           className="d-inline-block align-top"
           alt="Bee The Change Logo"
         />
-        <span className='textheader'>
+        <span className="textheader">
           {' Bee The Change '}
         </span>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#Login">Login</Nav.Link>
-          <Nav.Link href="#Register">Register</Nav.Link>
+          <Nav.Link href="#Login" className={"FrontNav"}>|| Login</Nav.Link>
+          <Nav.Link href="#Register" className={"FrontNav"}>|| Register</Nav.Link>
         </Nav>
-        {/* <SearchForm/> */}
+        <SearchForm />
       </Navbar.Collapse>
     </Navbar>
   );

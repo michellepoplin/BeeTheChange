@@ -17,7 +17,7 @@ class Devpage extends Component {
                 <Nav />
                 <Grid fluid>
                     <Container>
-                        <Row className={"devHeader"}>Developer</Row>
+                        <Row className={"devHeader"}>Developers</Row>
                         <Row>
                             <Col xs={3}>
                                 <Devcard
@@ -42,8 +42,7 @@ class Devpage extends Component {
                                     picture={Michelle}
                                     title="Michelle Poplin"
                                     about="A career Manager/Purchasing Agent ready for that BIG change. A leader that enjoys rocking the boat. For me, there is no box - it is what I make it to be."
-                                    github=""
-                                    linkedin=""
+                                    github="https://github.com/michellepoplin"
                                 />
                             </Col>
                             <Col xs={3}>

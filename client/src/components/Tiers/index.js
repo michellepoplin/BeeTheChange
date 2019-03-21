@@ -12,7 +12,7 @@ function Tiers(props) {
         <Card.Text>
           {props.tierdescription}
         </Card.Text>
-        <Paypal/>
+        <Paypal />
       </Card.Body>
     </Card>
   );

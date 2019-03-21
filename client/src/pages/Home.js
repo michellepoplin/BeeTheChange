@@ -50,7 +50,6 @@ class Home extends Component {
             </Row>
           </Container>
         </Section>
-        {/* </Grid> */}
         <Footer />
       </Wrapper>
     )

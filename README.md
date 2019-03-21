@@ -16,10 +16,13 @@ TODO:
 
 - Posting from the post form into the posts database
 - Farmers Database (with dummy info)
-- Farmer Search
+- Farmer Search (maybe based on state "location" and have all the examples in NC so they all show up in the search results for demonstration purposes, will need to add location to the farmer schema)
 - User Database (to store: image, bio, posts) (with dummy info)
 - Switching the placeholder image with the image chosen in modal
 - Edit button that allows user to input bio info
+- Merge Login Authentication code from KA
+- Set up the settings page and create a link to it in the navbar
+- Fix the last bit of the paypal code so that the pop up renders and gives you the option to donate
 
 ORDER:
 

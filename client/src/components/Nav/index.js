@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import "./Nav.scss";
 import Logo from '../../../src/logo.svg';
-// import SearchForm from "../SearchForm/index";
+import SearchForm from '../SearchForm';
 
 function Mainnav(props) {
   return (
@@ -17,13 +17,13 @@ function Mainnav(props) {
           alt="Bee The Change Logo"
         />
         <span className="textheader">
-        {' Bee The Change '}
+          {' Bee The Change '}
         </span>
       </Navbar.Brand>
       <Nav.Link href="/" className={"MainNav"}>|| Home</Nav.Link>
       <Nav.Link href="/settings" className={"MainNav"}>|| Settings</Nav.Link>
       <span className={'navbarSpan'}></span>
-      {/* <SearchForm/> */}
+      <SearchForm />
     </Navbar>
   );
 }

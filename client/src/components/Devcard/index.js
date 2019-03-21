@@ -19,8 +19,8 @@ function Devcard(props) {
             <p className={"devAbout"}>{props.about}</p>
           </Row>
           <Row>
-            <a href={props.github}><i className="fab fa-github devLink"></i></a>
-            <a href={props.linkedin}><i className="fab fa-linkedin devLink"></i></a>
+            { props.github && <a href={props.github} target="_blank" rel="noopener noreferrer"><i className="fab fa-github devLink"></i></a> }
+            { props.linkedin && <a href={props.linkedin} target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin devLink"></i></a> }
           </Row>
         </div>
       </Col>
