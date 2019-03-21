@@ -1,6 +1,10 @@
-.profilePicture {
+.profilePictureContainer {
     padding-top: 100px;
     width: 525px !important;
+}
+
+.profilePicture {
+    max-height: 300px;
 }
 
 .userHeader {
