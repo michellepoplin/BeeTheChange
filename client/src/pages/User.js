@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Mainnav from "../components/Nav";
+import MainNav from "../components/Nav";
 import Wrapper from "../components/Wrapper";
 import Footer from "../components/Footer";
 import Usercard from '../components/Usercard';
@@ -64,7 +64,7 @@ class User extends Component {
     render() {
         return (
             <Wrapper>
-                <Mainnav />
+                <MainNav />
                 <Usercover>
                     <Row>
                         <Col md={6}>

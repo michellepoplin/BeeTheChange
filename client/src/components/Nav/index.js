@@ -5,7 +5,7 @@ import "./Nav.scss";
 import Logo from '../../../src/logo.svg';
 import SearchForm from '../SearchForm';
 
-function Mainnav(props) {
+function MainNav(props) {
   return (
     <Navbar className="navbarStyle">
       <Navbar.Brand className="navheader" href="#home">
@@ -28,4 +28,4 @@ function Mainnav(props) {
   );
 }
 
-export default Mainnav;
+export default MainNav;
