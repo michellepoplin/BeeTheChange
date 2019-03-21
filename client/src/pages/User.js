@@ -82,7 +82,6 @@ class User extends Component {
                             <Col md={3}>
                                 <Aboutuser />
                             </Col>
-<<<<<<< HEAD
                                 <Col xs={6}>
                                         <Container>
                                             <Postform />
@@ -93,63 +92,26 @@ class User extends Component {
                                     <Tiers
                                         tierlevel="Getting Started"
                                         tierprice="5$"
-=======
-                            <Col xs={6}>
-                                <Container>
-                                    <Container>
-                                        <Postform />
-                                        <PostsContainer messages={messages} />
-                                    </Container>
-                                </Container>
-                            </Col>
-                            <Col xs={3}>
-                                <Container>
-                                    <Tiers
-                                        tierlevel="Getting Started"
-                                        tierprice="$5"
->>>>>>> f1068dba5f5a77974a2c071d9bd3a69629c134cb
                                         tierdescription="Help pay for the care of the Bee's and get updates"
                                     />
                                     <Tiers
                                         tierlevel="Help A Hive"
-<<<<<<< HEAD
-                                        tierprice="10$"
-=======
                                         tierprice="$10"
->>>>>>> f1068dba5f5a77974a2c071d9bd3a69629c134cb
                                         tierdescription="Sponsor Bee care and get 1 bottle of honey"
                                     />
                                     <Tiers
                                         tierlevel="Start A Hive"
-<<<<<<< HEAD
-                                        tierprice="150$"
-                                        tierdescription="Start a hive, get 10% of the honey output every season"
-                                    />
-                                </Col>
-                            
-=======
                                         tierprice="$150"
                                         tierdescription="Start a hive, get 10% of the honey output every season"
                                     />
-                                </Container>
                             </Col>
->>>>>>> f1068dba5f5a77974a2c071d9bd3a69629c134cb
                         </Row>
                     </Container>
                 </Grid>
                     <Footer />
             </Wrapper>
-<<<<<<< HEAD
-
-                )
-            }
-        }
-        
-export default User;
-=======
         );
     }
 }
 
 export default User;
->>>>>>> f1068dba5f5a77974a2c071d9bd3a69629c134cb
