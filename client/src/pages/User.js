@@ -83,31 +83,26 @@ class User extends Component {
                                 <Aboutuser />
                             </Col>
                             <Col xs={6}>
-                                <Container>
-                                    <Container>
-                                        <Postform />
-                                        <PostsContainer messages={messages} />
-                                    </Container>
-                                </Container>
+
+                                <Postform />
+                                <PostsContainer messages={messages} />
                             </Col>
-                            <Col xs={3}>
-                                <Container>
-                                    <Tiers
-                                        tierlevel="Getting Started"
-                                        tierprice="$5"
-                                        tierdescription="Help pay for the care of the Bee's and get updates"
-                                    />
-                                    <Tiers
-                                        tierlevel="Help A Hive"
-                                        tierprice="$10"
-                                        tierdescription="Sponsor Bee care and get 1 bottle of honey"
-                                    />
-                                    <Tiers
-                                        tierlevel="Start A Hive"
-                                        tierprice="$150"
-                                        tierdescription="Start a hive, get 10% of the honey output every season"
-                                    />
-                                </Container>
+                            <Col md={3}>
+                                <Tiers
+                                    tierlevel="Getting Started"
+                                    tierprice="5$"
+                                    tierdescription="Help pay for the care of the Bee's and get updates"
+                                />
+                                <Tiers
+                                    tierlevel="Help A Hive"
+                                    tierprice="10$"
+                                    tierdescription="Sponsor Bee care and get 1 bottle of honey"
+                                />
+                                <Tiers
+                                    tierlevel="Start A Hive"
+                                    tierprice="150$"
+                                    tierdescription="Start a hive, get 10% of the honey output every season"
+                                />
                             </Col>
                         </Row>
                     </Container>
