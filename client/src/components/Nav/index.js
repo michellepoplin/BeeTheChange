@@ -25,6 +25,7 @@ import Nav from 'react-bootstrap/Nav';
       </Navbar.Brand>
       <Nav.Link href="/" className={"MainNav"}>|| Home</Nav.Link>
       <Nav.Link href="/settings" className={"MainNav"}>|| Settings</Nav.Link>
+      <Nav.Link href="/developers" className={"MainNav"}>|| The Team</Nav.Link>
       <span className={'navbarSpan'}></span>
     <Form inline>
       <FormControl type="text" placeholder="Find A Hive To Sponsor" className="mr-sm-2" />

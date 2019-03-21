@@ -81,20 +81,9 @@ class User extends Component {
                                 <Aboutuser />
                             </Col>
                             <Col xs={6}>
-                                <Container>
-                                    <Usercover />
-                                    <Container>
-                                        <Postform />
-                                        <PostsContainer messages={messages} />
-                                    </Container>
-                                </Container>
-                            </Col>
-                            <Col xs={3}>
-                                <Container>
-                                    <Button>Follow</Button>
-                                    <Tiers />
-                                </Container>
 
+                                <Postform />
+                                <PostsContainer messages={messages} />
                             </Col>
                             <Col md={3}>
                                 <Tiers
