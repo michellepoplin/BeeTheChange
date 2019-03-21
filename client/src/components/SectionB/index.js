@@ -3,7 +3,6 @@
 import React from "react";
 import './SectionB.scss';
 
-
 function SectionB(props) {
     return (
 <section className="SectionB">

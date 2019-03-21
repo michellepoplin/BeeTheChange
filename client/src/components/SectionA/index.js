@@ -1,7 +1,4 @@
 import React from "react";
-// // import "./SectionA.scss";
-
-
 
 function SectionA() {
   return (
