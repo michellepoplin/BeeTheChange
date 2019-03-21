@@ -22,6 +22,8 @@ function MainNav(props) {
       </Navbar.Brand>
       <Nav.Link href="/" className={"MainNav"}>|| Home</Nav.Link>
       <Nav.Link href="/settings" className={"MainNav"}>|| Settings</Nav.Link>
+      <Nav.Link href="/developers" className={"MainNav"}>|| The Team</Nav.Link>
+
       <span className={'navbarSpan'}></span>
       <SearchForm handleFormSubmit={() => { console.log('Handle Form Submit'); }} />
     </Navbar>

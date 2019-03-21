@@ -1,13 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
-import { Row, Col } from 'react-bootstrap';
 import './Usercard.scss';
-// import ProfilePicModal from '../../components/Modals/ProfilePicModal/';
+import {Row, Col} from 'react-bootstrap';
 
-class Usercard extends Component {
-  render() {
+
+
+
+function Usercard(props) {
+
     return (
+
       <Container className={"profilePictureContainer"}>
         <Col md={12}>
           <Row>
@@ -22,3 +25,4 @@ class Usercard extends Component {
 }
 
 export default Usercard;
+

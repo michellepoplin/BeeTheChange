@@ -6,6 +6,7 @@ import Settings from "./pages/Settings";
 import Devpage from './pages/Devpage';
 import Home from "./pages/Home";
 
+
 function App() {
   return (
     <Router>
@@ -16,7 +17,9 @@ function App() {
           {/* TODO: Update Settings To Not Require User Id Param After Authentication Is Implemented */}
           <Route exact path="/settings/:id" component={Settings} />
           <Route exact path="/developers" component={Devpage} />
-      </Switch>
+          <Route exact path="/farmersearch" component={Farmersearch} />
+        </Switch> 
+      </div>
     </Router>
   );
 }

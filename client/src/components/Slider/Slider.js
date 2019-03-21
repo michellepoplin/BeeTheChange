@@ -37,8 +37,8 @@ class Slider extends React.Component {
               alt="First slide"
             />
             <Carousel.Caption className="capOne">
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Save The Bees</h3>
+              <p>Bee the Change allows you to help the dwindeling bee population</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -48,8 +48,8 @@ class Slider extends React.Component {
               alt="second slide"
             />
             <Carousel.Caption className="capTwo">
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3>Sponser A Farmer</h3>
+              <p>Donate money to a local farmer to help care for the bees.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -59,8 +59,10 @@ class Slider extends React.Component {
               alt="Third slide"
             />
             <Carousel.Caption className="capThree">
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <h3>Be A Sponser</h3>
+              <p>
+                Sponsering farmers and hives will allow you to unlock rewards.
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
