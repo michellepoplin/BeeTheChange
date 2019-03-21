@@ -1,41 +1,36 @@
 import React from "react";
-import "./Nav.scss";
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from '../../../src/logo.svg';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
+import "./Nav.scss";
+import Logo from '../../../src/logo.svg';
+import SearchForm from '../SearchForm';
 
-  function Mainnav(props) {
-    return (
-
-      <Navbar className="navbarStyle">
-      <Navbar.Brand className="navheader" href="#home">     
-      <img
-        src={Logo}
-        width="55"
-        height="55"
-        className="d-inline-block align-top"
-        alt="Bee The Change Logo"
-      />
-      <span className='textheader'>
-      {' Bee The Change '}
-      </span>
+function MainNav(props) {
+  return (
+    <Navbar className="navbarStyle">
+      <Navbar.Brand className="navheader" href="#home">
+        <img
+          src={Logo}
+          width="55"
+          height="55"
+          className="d-inline-block align-top"
+          alt="Bee The Change Logo"
+        />
+        <span className="textheader">
+          {' Bee The Change '}
+        </span>
       </Navbar.Brand>
       <Nav.Link href="/" className={"MainNav"}>|| Home</Nav.Link>
+<<<<<<< HEAD
       <Nav.Link href="/settings" className={"MainNav"}>|| Settings</Nav.Link>
       <Nav.Link href="/developer" className={"MainNav"}>|| The Team</Nav.Link>
+=======
+      {/* <Nav.Link href="/settings" className={"MainNav"}>|| Settings</Nav.Link> */}
+>>>>>>> f1068dba5f5a77974a2c071d9bd3a69629c134cb
       <span className={'navbarSpan'}></span>
-    <Form inline>
-      <FormControl type="text" placeholder="Find A Hive To Sponsor" className="mr-sm-2" />
-      <Button variant="outline-info" className={"MainNavButt"}>Search</Button>
-    </Form>
- 
-  
-  </Navbar>
-    );
+      <SearchForm handleFormSubmit={() => { console.log('Handle Form Submit'); }} />
+    </Navbar>
+  );
 }
 
-export default Mainnav;
-
+export default MainNav;

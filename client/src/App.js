@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import User from "./pages/User";
+<<<<<<< HEAD
 import Main from "./pages/Main";
 import Devpage from "./pages/Devpage";
 import Farmersearch from "./pages/Farmersearch";
@@ -31,9 +32,15 @@ componentDidMount() {
 
 render() {
   const { isAuthenticated } = this.props.auth;
+=======
+import Search from "./pages/Search";
+import Devpage from './pages/Devpage';
+import Home from "./pages/Home";
+>>>>>>> f1068dba5f5a77974a2c071d9bd3a69629c134cb
 
   return (
     <Router>
+<<<<<<< HEAD
       <div>
       <Button
               bsStyle="primary"
@@ -70,6 +77,14 @@ render() {
           <Route exact path="/famersearch" component={Farmersearch} />
         </Switch> 
       </div>
+=======
+      <Switch>
+          <Route path='/' exact={true} component={Home} />
+          <Route exact path="/user" component={User} />
+          <Route exact path="/search" component={Search} />
+          <Route exact path="/developers" component={Devpage} />
+      </Switch>
+>>>>>>> f1068dba5f5a77974a2c071d9bd3a69629c134cb
     </Router>
   );
 }
