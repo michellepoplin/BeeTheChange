@@ -4,7 +4,7 @@ import User from "./pages/User";
 import Main from "./pages/Main";
 import Devpage from "./pages/Devpage";
 import Farmersearch from "./pages/Farmersearch";
-import './App.scss';
+// import './App.scss';
 
 function App() {
   return (
