@@ -14,10 +14,12 @@ function Usercard(props) {
       <Container className={"profilePictureContainer"}>
         <Col md={12}>
           <Row>
-            <Image className={"profilePicture"} src={(this.props.user && this.props.user.Image) || 'https://via.placeholder.com/250'} roundedCircle />
+            <Image className={"profilePicture"} src="https://via.placeholder.com/250" roundedCircle />
+            {/* <Image className={"profilePicture"} src={(this.props.user && this.props.user.Image) || 'https://via.placeholder.com/250'} roundedCircle /> */}
             {/* <ProfilePicModal /> */}
           </Row>
-          <Row><h3 className={"userHeader"}>{(this.props.user && this.props.user.Name) || ''}</h3></Row>
+          <Row><h3 className={'userHeader'}>Farmer Joe</h3></Row>
+          {/* <Row><h3 className={"userHeader"}>{(this.props.user && this.props.user.Name) || ''}</h3></Row> */}
         </Col>
       </Container>
     );

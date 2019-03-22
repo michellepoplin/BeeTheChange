@@ -1,41 +1,27 @@
-import {React, Component} from "react";
+import  React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Farmer from "./pages/User";
 import Search from "./pages/Search";
 import Settings from "./pages/Settings";
 import Devpage from './pages/Devpage';
-import Home from "./pages/Home";
+import Main from "./pages/Main";
 import User from './pages/User'
+import Login from './pages/login'
+
+
+
 // import Farmsearch from ".pages/Farmsearch"
 
 
 class App extends Component {
-  goTo(route) {
-    this.props.history.replace(`/${route}`)
-  }
-
-  login() {
-    this.props.auth.login();
-  }
-
-  logout() {
-    this.props.auth.logout();
-  }
-
-  componentDidMount() {
-    const { renewSession } = this.props.auth;
-
-    if (localStorage.getItem('isLoggedIn') === 'true') {
-      renewSession();
-    }
-  }
 
   render() {
-    const { isAuthenticated } = this.props.auth;
+
     return (
       <Router>
         <Switch>
-          <Route path="/" exact={true} component={Home} />
+          <Route path="/" component={Main} />
+          <Route exact path="/login" component={Login} />
           <Route exact path="/farmer/:id" component={Farmer} />
           <Route exact path="/search" component={Search} />
           <Route exact path="/user" component={User} />
