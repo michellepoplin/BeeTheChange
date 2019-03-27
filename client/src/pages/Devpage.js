@@ -41,8 +41,9 @@ class Devpage extends Component {
                                 <Devcard
                                     picture={Michelle}
                                     title="Michelle Poplin"
-                                    about="A career Manager/Purchasing Agent ready for that BIG change. A leader that enjoys rocking the boat. For me, there is no box - it is what I make it to be."
+                                    about="Box? What Box? There is no box only the illusion of a box."
                                     github="https://github.com/michellepoplin"
+                                    linkedin="https://linkedin.com/in/michellepoplin/"
                                 />
                             </Col>
                             <Col xs={3}>
